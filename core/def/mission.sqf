@@ -102,12 +102,27 @@ btc_p_flag = "btc_p_flag" call BIS_fnc_getParamValue;
 btc_p_debug = "btc_p_debug" call BIS_fnc_getParamValue;
 
 //<< Custom CVO Parameters >>
-cvo_fullHeal = "cvo_fullHeal" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_fortify = "cvo_p_fortify" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_custom_construction_array = "cvo_p_custom_construction_array" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_acre_unconcious = "cvo_p_acre_unconcious" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_medical_fullHeal = "cvo_p_medical_fullHeal" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_logistics_crate = "cvo_p_logistics_crate" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_logistics_fortify = "cvo_p_logistics_fortify" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_logistics_custom_construction_array = "cvo_p_logistics_custom_construction_array" call BIS_fnc_getParamValue isEqualTo 1;
+
 cvo_p_arsenal = "cvo_p_arsenal" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_arsenal_medicalTab = "cvo_p_arsenal_medicalTab" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_loadout = "cvo_p_loadout" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_arsenal_Tab_custom = "cvo_p_arsenal_Tab_custom" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_arsenal_loadout = "cvo_p_arsenal_loadout" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_env_fastnight = "cvo_p_env_fastnight" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_env_fastnightmulti = "cvo_p_env_fastnightmulti" call BIS_fnc_getParamValue;
+
+cvo_p_intel_flags = "cvo_p_intel_flags" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_side_distance = "cvo_p_side_distance" call BIS_fnc_getParamValue;
+
+
+//<< Debug sthsth >>
 
 switch (btc_p_debug) do {
     case 0 : {
@@ -397,8 +412,8 @@ btc_animals_type = ["Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_R
 
 //FOB
 btc_fob_mat = "Land_Cargo20_blue_F";
-btc_fob_structure = "Land_BagBunker_Tower_F";
-btc_fob_flag = "Flag_NATO_F";
+btc_fob_structure = "Flag_TKP";
+btc_fob_flag = "Land_MapBoard_F";
 btc_fob_id = 0;
 btc_fob_minDistance = 1500;
 
@@ -529,7 +544,7 @@ btc_construction_array =
     ]
 ];
 
-if (cvo_p_custom_construction_array) then{[compileScript ["cvo\cvo_construction.sqf"]] call CBA_fnc_directCall;};
+if (cvo_p_logistics_custom_construction_array) then{[compileScript ["cvo\logistics\cvo_logistics_init_construction.sqf"]] call CBA_fnc_directCall;};
 
 (btc_construction_array select 1) params [
     "_cFortifications", "_cStatics", "_cAmmobox",

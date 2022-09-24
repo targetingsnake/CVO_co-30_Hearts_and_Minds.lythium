@@ -74,7 +74,7 @@ if (btc_p_chem) then {
     ["DeconShower_01_F", "init", {(_this select 0) setVariable ['bin_deconshower_disableAction', true];}, true, [], true] call CBA_fnc_addClassEventHandler;
     ["DeconShower_02_F", "init", {(_this select 0) setVariable ['bin_deconshower_disableAction', true];}, true, [], true] call CBA_fnc_addClassEventHandler;
 
-    [] call btc_chem_fnc_ehDetector;
+    //[] call btc_chem_fnc_ehDetector;
 };
 
 if (btc_p_spect) then {
@@ -90,7 +90,12 @@ if (btc_p_respawn_arsenal) then {
     [_player, "Respawn", {
         params ["_unit", "_corpse"];
         if (isObjectHidden _corpse) exitWith {};
-        [btc_gear_object, _unit] call ace_arsenal_fnc_openBox;
+        if (cvo_p_arsenal) then {
+            [CVO_arsenal, _unit] call ace_arsenal_fnc_openBox;
+        } else {
+            [btc_gear_object, _unit] call ace_arsenal_fnc_openBox;
+        };
+        
     }] call CBA_fnc_addBISEventHandler;
 };
 
