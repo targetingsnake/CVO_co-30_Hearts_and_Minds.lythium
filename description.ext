@@ -1,6 +1,6 @@
 
-loadScreen = "cvo\cvo_ham_title.paa";
-author = "Dr. Zorn - Original by Giallustio";
+loadScreen = "cvo\img\cvo_ham_title.paa";
+author = "Giallustio - Adapted for CVO by Zorn";
 onLoadName = $STR_BTC_HAM_DESCR_NAME;
 onLoadMission = $STR_BTC_HAM_DESCR_MISSION;
 enabledebugconsole = 1;
@@ -29,11 +29,13 @@ class RscTitles {
 
 class CfgFunctions {
     // add your own functions below
+    #include "cvo\CfgFunctions.hpp"
 };
 
 // CBA XEH
 class Extended_PreInit_EventHandlers {
     #include "core\fnc\eh\xeh_PreInit_EH.hpp"
+    #include "cvo\settings\cvo_cbrn_settings.hpp"
 };
 
 class Extended_InitPost_EventHandlers {
@@ -50,7 +52,8 @@ class Extended_InitPost_EventHandlers {
 
 class CfgSounds {
     sounds[] = {};
-    #include "cvo\sounds\sounds.hpp"
+    #include "cvo\CfgSounds.hpp"
+    #include "cvo\env\al_duststorm\sound\sandstormsounds.hpp"
 };
 
 respawn = 3;
@@ -75,5 +78,6 @@ class CfgMusic
 
 		// filename, volume, pitch
 		sound[]	= { "cvo\sounds\cvo1.ogg", db + 0, 1.0 };
+        titles[] = {1,""};
 	};
 };

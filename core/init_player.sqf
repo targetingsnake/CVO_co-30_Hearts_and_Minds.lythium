@@ -28,12 +28,12 @@ btc_intro_done = [] spawn btc_respawn_fnc_intro;
         player createDiarySubject ["btc_diarylog", localize "STR_BTC_HAM_CON_INFO_ASKHIDEOUT_DIARYLOG", '\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa'];
     };
 
-    if (cvo_p_loadout) then {
-        player setVariable ["CVO_Loadout", getUnitLoadout player]; systemChat "Loadout saved";                                                           // set default loadout at spawn
-        player addEventHandler ["Respawn", { player setUnitLoadout (player getVariable ["CVO_Loadout", []]);systemChat "Loadout loaded"; }];            // adds EH when respawning, using the previously saved loadout 
-        [compileScript ["cvo\cvo_arsenal_loadout.sqf"]] call CBA_fnc_directCall;                                                                        // adds Paperwork Interaction
-        private _id = ["ace_arsenal_displayClosed", {player setVariable ["CVO_Loadout", getUnitLoadout player];systemChat "Loadout saved";}] call CBA_fnc_addEventHandler;     // adds EH setting the loadout when closing the arsenal
-        systemChat "CVO_Loadout completed";
+    if (cvo_p_arsenal_loadout) then {
+        [compileScript ["cvo\arsenal\cvo_arsenal_loadout.sqf"]] call CBA_fnc_directCall;                                                                                                                                // adds Paperwork Interaction
+        player setVariable ["CVO_Loadout", getUnitLoadout player]; diag_log ("[CVO] [LOADOUT] - " + str player + " - Loadout saved");                                                                                     // set default loadout at spawn
+        player addEventHandler ["Respawn", { player setUnitLoadout (player getVariable ["CVO_Loadout", []]);    diag_log ("[CVO] [LOADOUT] - " + str player + " - Loadout loaded"); }];                                 // adds EH when respawning, using the previously saved loadout 
+        private _id = ["ace_arsenal_displayClosed", {player setVariable ["CVO_Loadout", getUnitLoadout player]; diag_log ("[CVO] [LOADOUT] - " + str player + " - Loadout saved");}] call CBA_fnc_addEventHandler;      // adds EH setting the loadout when closing the arsenal
+        diag_log ("[CVO] [LOADOUT] - " + str player + " - init completed");
     } else {
         switch (btc_p_autoloadout) do {
             case 1: {
