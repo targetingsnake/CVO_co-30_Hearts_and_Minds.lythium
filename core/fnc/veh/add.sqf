@@ -31,6 +31,15 @@ if (isNil "btc_vehicles") then {
 if (isNil {_veh getVariable "btc_EDENinventory"}) then {
     _veh setVariable ["btc_EDENinventory", _veh call btc_log_fnc_inventoryGet];
 };
+[{ace_common_settingsInitFinished}, {
+    if (isNull _this) exitwith {};
+    if (isNil {_this getVariable "btc_EDEN_defaultFuelCargo"}) then {
+        _this setVariable ["btc_EDEN_defaultFuelCargo", _this call ace_refuel_fnc_getFuel, true];
+    };
+    if (isNil {_this getVariable "btc_EDEN_defaultSupply"}) then {
+        _this setVariable ["btc_EDEN_defaultSupply", _this call ace_rearm_fnc_getSupplyCount, true];
+    };
+}, _veh] call CBA_fnc_waitUntilAndExecute;
 
 if (btc_vehicles pushBackUnique _veh isEqualTo -1) exitWith {
     if (btc_debug || btc_debug_log) then {
@@ -48,18 +57,27 @@ _veh addMPEventHandler ["MPKilled", {
 if ((isNumber (configOf _veh >> "ace_fastroping_enabled")) && (typeOf _veh isNotEqualTo "RHS_UH1Y_d")) then {
     [_veh] call ace_fastroping_fnc_equipFRIES
 };
-if (btc_p_respawn_location > 1) then {
-    if (fullCrew [_veh, "cargo", true] isNotEqualTo []) then {
-        if (
-            (btc_p_respawn_location isEqualTo 2) && (_veh isKindOf "Air") ||
-            btc_p_respawn_location > 2
-        ) then {
-            [
-                _veh,
-                "Deleted",
-                {_thisArgs call BIS_fnc_removeRespawnPosition},
-                [btc_player_side, _veh] call BIS_fnc_addRespawnPosition
-            ] call CBA_fnc_addBISEventHandler;
-        };
+
+if (fullCrew [_veh, "cargo", true] isNotEqualTo []) then {
+    if (
+        (btc_p_respawn_location isEqualTo 2) && (_veh isKindOf "Air") ||
+        btc_p_respawn_location > 2
+    ) then {
+        [
+            _veh,
+            "Deleted",
+            {_thisArgs call BIS_fnc_removeRespawnPosition},
+            [btc_player_side, _veh] call BIS_fnc_addRespawnPosition
+        ] call CBA_fnc_addBISEventHandler;
+    };
+
+    if (
+        (btc_p_respawn_fromOutsideBase isEqualTo 3) && (_veh isKindOf "Air") ||
+        btc_p_respawn_fromOutsideBase > 3
+    ) then {
+        [_veh, false,
+            btc_p_respawn_fromOutsideTimeout >= 3 ||
+            (btc_p_respawn_fromOutsideTimeout >= 2) && !(_veh isKindOf "Air")
+        ] remoteExecCall ["btc_fob_fnc_addInteraction", [0, -2] select isDedicated, _veh];
     };
 };

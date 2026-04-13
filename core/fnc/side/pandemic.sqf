@@ -25,10 +25,9 @@ params [
 ];
 
 private _minNumberOfSubTask = 2;
-private _useful = btc_city_all select {
-    !isNull _x &&
+private _useful = values btc_city_all select {
     ([_x] call cvo_side_fnc_distanceCondition) &&
-    {!(_x getVariable ["type", ""] in ["NameMarine", "StrongpointArea"])} &&
+    !(_x getVariable ["type", ""] in ["NameMarine", "StrongpointArea"]) &&
     {!(_x getVariable ["active", false])} &&
     {
         private _city = _x;

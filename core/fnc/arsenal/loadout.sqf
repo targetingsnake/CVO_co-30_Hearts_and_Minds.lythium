@@ -86,7 +86,7 @@ _medical pushBack (if (_advancedBandages > 0) then {
     ["ACE_fieldDressing", 4]
 });
 _medical pushBack (if (_epi < 4) then {
-    ["ACE_epinephrine", 2]
+    ["ACE_epinephrine", 3]
 } else {
     ["ACE_morphine", 3]
 });
@@ -94,8 +94,6 @@ if (_fractures > 0) then {
     _medical pushBack ["ACE_splint", 1];
 };
 _cargo_uniform append _medical;
-
-
 
 private _uniform = switch (_type) do {
     case 6: {

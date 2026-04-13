@@ -24,8 +24,7 @@ params [
     ["_taskID", "btc_side", [""]]
 ];
 
-private _useful = btc_city_all select {
-    !isNull _x &&
+private _useful = values btc_city_all select {
     !((_x getVariable ["type", ""]) in ["NameMarine", "StrongpointArea"]) &&
     ([_x] call cvo_side_fnc_distanceCondition)
 };
@@ -38,7 +37,7 @@ if (_roads isNotEqualTo []) then {_pos = getPos (selectRandom _roads);};
 
 private _veh_type = selectRandom btc_civ_type_veh;
 private _veh = createVehicle [_veh_type, _pos, [], 0, "NONE"];
-(_veh call ace_repair_fnc_getWheelHitPointsWithSelections) params ["_wheelHitPoints", "_wheelHitPointSelections"];
+(_veh call ace_common_fnc_getWheelHitPointsWithSelections) params ["_wheelHitPoints", "_wheelHitPointSelections"];
 _veh setDir (random 360);
 _veh setDamage 0.7;
 private _damagedWheel = 1 + round random (count _wheelHitPointSelections - 1);

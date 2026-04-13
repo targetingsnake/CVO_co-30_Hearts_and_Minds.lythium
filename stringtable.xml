@@ -71,31 +71,13 @@
     <Package name="Intro">
         <Container name="Intro">
             <Key ID="STR_BTC_HAM_INTRO_ARSENAL_REDEPLOY">
-                <Original>Arsenal/Deploy</Original>
-                <Spanish>Arsenal/Deploy</Spanish>
+                <Original>Arsenal/Re-deploy</Original>
+                <Spanish>Arsenal/Re-deploy</Spanish>
                 <German>Arsenal/Verlegen</German>
                 <Portuguese>Arsenal/Ressurgir</Portuguese>
                 <Chinesesimp>军火库/重新部署</Chinesesimp>
-                <French>Arsenal/Déploiement</French>
+                <French>Arsenal/Re-déploiement</French>
                 <Czech>Arsenal/Opětovné nasazení</Czech>
-            </Key>
-                <Key ID="STR_BTC_HAM_INTRO_REDEPLOY">
-                <Original>Re-deploy</Original>
-                <Spanish>Re-deploy</Spanish>
-                <German>Verlegen</German>
-                <Portuguese>Ressurgir</Portuguese>
-                <Chinesesimp>重新部署</Chinesesimp>
-                <French>Re-déploiement</French>
-                <Czech>Opětovné nasazení</Czech>
-            </Key>
-            <Key ID="STR_BTC_HAM_INTRO_ARSENAL">
-                <Original>Arsenal</Original>
-                <Spanish>Arsenal</Spanish>
-                <German>Arsenal</German>
-                <Portuguese>Arsenal</Portuguese>
-                <Chinesesimp>军火库</Chinesesimp>
-                <French>Arsenal</French>
-                <Czech>Arsenal</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_INTRO_LOGPOINT">
                 <Original>Rearm/Repair and Objects</Original>
@@ -138,7 +120,7 @@
                 <Czech>Headless and Database</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_DOC_HEADLESS_TEXT">
-                <Original>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission support ACE Headless.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_warlords\Data\preview_cp_transfer.jpg' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; This mission has a database system. Enemy units, towns, hideouts, cache, objects created or static weapons assembled by players or Zeus, vehicles, vehicle in vehicle, tag, players markers on global channel are saved. All admin can save mission progress at any time with his self interaction key.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_mark\Images\mark_popupImage_01_ca.paa' width='355' height='200' /&gt;</Original>
+                <Original>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission support ACE Headless.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_warlords\Data\preview_cp_transfer.jpg' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; This mission has a database system. Enemy units, towns, hideouts, cache, objects created or static weapons assembled by players or Zeus, vehicles, vehicle in vehicle, tag, slots position, players markers on global channel are saved. All admin can save mission progress at any time with his self interaction key.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_mark\Images\mark_popupImage_01_ca.paa' width='355' height='200' /&gt;</Original>
                 <Spanish>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission support ACE Headless.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_warlords\Data\preview_cp_transfer.jpg' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Esta misión tiene un sistema de base de datos. Se guardan unidades enemigas, ciudades, escondites, caché, objetos creados por jugadores o Zeus, vehículos, marcadores de jugadores (no líneas) en el canal global. Todos los administradores pueden guardar el progreso de la misión en cualquier momento con su clave de auto interacción.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_mark\Images\mark_popupImage_01_ca.paa' width='355' height='200' /&gt;</Spanish>
                 <German>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission support ACE Headless.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_warlords\Data\preview_cp_transfer.jpg' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Diese Mission verfügt über ein eingenes Datenbanksystem, in welcher folgende Dinge gespeichert werden: feindliche Einheiten, Städte, Verstecke, feindliche Waffenlager, Fahrzeuge, vom Spieler oder vom Zeus erstelle Objecte und Marker (keine Linien) vom Spieler im Globalen-Channel. Jeder Admin kann zu jeder Zeit den Missionsfortschritt über das Eigen-Interaktionsmenü speichern.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_mark\Images\mark_popupImage_01_ca.paa' width='355' height='200' /&gt;</German>
                 <Portuguese>&lt;img image='\a3\ui_f\data\map\vehicleicons\iconvirtual_ca.paa' width='20' height='20'/&gt; This mission support ACE Headless.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_warlords\Data\preview_cp_transfer.jpg' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\download_ca.paa' width='20' height='20'/&gt; Esta missão tem um sistema de banco de dados. Unidades inimigas, cidades, esconderijos, cache, objetos criados por jogadores ou Zeus, veículos, marcação de jogadores (sem linhas) no canal global são salvos. O administrador pode salvar o progresso da missão a qualquer momento usando botão de interação.&lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\data_f_mark\Images\mark_popupImage_01_ca.paa' width='355' height='200' /&gt;</Portuguese>
@@ -180,7 +162,7 @@
         </Container>
         <Container name="Documentation: Respawn tickets">
             <Key ID="STR_BTC_HAM_DOC_RESPAWN_TEXT">
-                <Original>&lt;img image='\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Introduction:&lt;/marker&gt;&lt;br/&gt; By default, each player has a limited number of respawn tickets. On first join, you get the default number of tickets (20). After, each time you respawn, your number of tickets will decrease by one and a kill in action (KIA) marker will appear after 10 minutes.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_104_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Get new tickets:&lt;/marker&gt;&lt;br/&gt; Players can increase by one ticket if they retrieve their dead body back to base. Prisoners also increase by one ticket but to all currently connected players.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_118_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\medical_gui\ui\bodybag.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Dead player body:&lt;/marker&gt;&lt;br/&gt; Any player can retrieve dead player body by:&lt;br/&gt; - &lt;img image='\z\ace\addons\medical_treatment\ui\bodybag_ca.paa' width='13' height='13'/&gt; Putting dead body in a body bag. Watch out if your vehicle get destroyed, all body bag will be lost!&lt;br/&gt; - Carry it to the logistic point&lt;br/&gt; - Interact with the logistic point&lt;br/&gt; - &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='13' height='13'/&gt; Select "Get tickets from body bag or prisoner"&lt;br/&gt; The ticket from the body bag will go to the player owned the dead body (even if he is not connected).&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F_Orange\Data\CfgVehicles\Land_Bodybag_01_black_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\captives\UI\handcuff_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Prisoners:&lt;/marker&gt;&lt;br/&gt; Prisoners &lt;img image='\z\ace\addons\captives\UI\Surrender_ca.paa' width='13' height='13'/&gt; follow the same process as dead player body without the need of body bag. The prisonner need to be alive but it could be unconcious.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_106_co.paa' width='355' height='200'/&gt;</Original>
+                <Original>&lt;img image='\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Introduction:&lt;/marker&gt;&lt;br/&gt; By default, each player has a limited number of respawn tickets. On first join, you get the default number of tickets (20). After, each time you respawn, your number of tickets will decrease by one and a kill in action (KIA) marker will appear after 10 minutes.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_104_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Get new tickets:&lt;/marker&gt;&lt;br/&gt; Players can increase by one ticket if they retrieve their dead body back to base. Prisoners also increase by one ticket but to all currently connected players.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_118_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\medical_gui\ui\bodybag.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Dead player body:&lt;/marker&gt;&lt;br/&gt; Any player can retrieve dead player body by:&lt;br/&gt; - &lt;img image='\z\ace\addons\medical_treatment\ui\bodybag_ca.paa' width='13' height='13'/&gt; Putting dead body in a body bag. Watch out if your vehicle get destroyed, all body bag will be lost!&lt;br/&gt; - Carry it to the logistic point&lt;br/&gt; - Interact with the logistic point&lt;br/&gt; - &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='13' height='13'/&gt; Select "Get tickets from body bag or prisoner"&lt;br/&gt; The ticket from the body bag will go to the player owned the dead body (even if he is not connected). Dead body can also be directly processed. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F_Orange\Data\CfgVehicles\Land_Bodybag_01_black_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\captives\UI\handcuff_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Prisoners:&lt;/marker&gt;&lt;br/&gt; Prisoners &lt;img image='\z\ace\addons\captives\UI\Surrender_ca.paa' width='13' height='13'/&gt; follow the same process as dead player body without the need of body bag. The prisonner need to be alive but it could be unconcious.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_106_co.paa' width='355' height='200'/&gt;</Original>
                 <German>&lt;img image='\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Einführung:&lt;/marker&gt;&lt;br/&gt; Standardmäßig hat jeder Spieler eine begrenzte Anzahl von Respawn Tickets. Beim ersten Spawen erhält jeder Spieler standartmäßig 20 Tickets. Mit jedem Respawn wird ein Ticket abgezogen und eine Kill in Action (KIA) Markierung erscheint nach 10 Minuten.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_104_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Tickets auffüllen:&lt;/marker&gt;&lt;br/&gt; Spieler können ein Ticket dazu erhalten, wenn sie ihren Leiche zurück zur Basis bringen. Für jeden zur Basis gebrachten Gefangenen erhält jeder Spieler, welcher sich aktuell auf den Server befindet, ein Ticket dazu.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_118_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\medical_gui\ui\bodybag.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Leiche eines Spielers:&lt;/marker&gt;&lt;br/&gt; Jeder Spieler kann einen toten Spieler bergen, in dem er:&lt;br/&gt; - &lt;img image='\z\ace\addons\medical_treatment\ui\bodybag_ca.paa' width='13' height='13'/&gt; die Leiche eines Spielers in einen Leichensack packt. Achtung! Wenn das Fahrzeug mit Leichensäcken zerstört wird, sind diese verloren!&lt;br/&gt; - Trage die Leichensäcke zum Logistik Punkt&lt;br/&gt; - Interagiere mit dem Logistikpunkt&lt;br/&gt; - &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='13' height='13'/&gt; Wähle: "Erhalte ein Ticket durch Leichensack oder Gefangenen"&lt;br/&gt; Die Leiche des Spielers, welche im Leichensack war, erhält ein Ticket, auch wenn er aktuell nicht auf dem Server ist.&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F_Orange\Data\CfgVehicles\Land_Bodybag_01_black_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\captives\UI\handcuff_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Prisoners:&lt;/marker&gt;&lt;br/&gt; Gefangene &lt;img image='\z\ace\addons\captives\UI\Surrender_ca.paa' width='13' height='13'/&gt; folge den gleichen Schritten wie bei Leichen von Spielern, nur ohne Leichensack. Gefangene müssen am Leben sein, können aber Ohnmächtig sein.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_106_co.paa' width='355' height='200'/&gt;</German>
                 <Chinesesimp>&lt;img image='\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;介绍:&lt;/marker&gt;&lt;br/&gt; 默认情况下, 每名玩家都有受限的重生票数。首次进入服务器时, 你会获得默认的重生票数(20)。此后, 每次重生都会使你的重生票数减一, 且地图上将于10分钟后出现阵亡(KIA)标记。&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_104_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;获得新的重生票数:&lt;/marker&gt;&lt;br/&gt; 玩家可以通过将他们的尸体带回基地, 来获得一枚重生票数。带回囚犯也可以为全体在线玩家每人增加一枚重生票数。&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_118_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\medical_gui\ui\bodybag.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;阵亡玩家的尸体:&lt;/marker&gt;&lt;br/&gt; 玩家都可以通过以下方式回收尸体:&lt;br/&gt; - &lt;img image='\z\ace\addons\medical_treatment\ui\bodybag_ca.paa' width='13' height='13'/&gt; 将尸体放进尸体袋。小心, 如果你的载具被摧毁, 其中所有尸体袋都会丢失!&lt;br/&gt; - 将尸体搬运到后勤点&lt;br/&gt; - 与后勤点互动&lt;br/&gt; - &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='13' height='13'/&gt; 选择"回收尸体袋或囚犯以获得重生票数"&lt;br/&gt; 获得的重生票数将会发放给该尸体对应的玩家(即使他不在线)。&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F_Orange\Data\CfgVehicles\Land_Bodybag_01_black_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\captives\UI\handcuff_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Prisoners:&lt;/marker&gt;&lt;br/&gt; 囚犯 &lt;img image='\z\ace\addons\captives\UI\Surrender_ca.paa' width='13' height='13'/&gt; 遵循与回收玩家尸体相同的流程, 但无需尸体袋。被回收的囚犯必须活着, 但可以出于昏迷状态。&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_106_co.paa' width='355' height='200'/&gt;</Chinesesimp>
                 <Czech>&lt;img image='\a3\Ui_F_Curator\Data\CfgMarkers\kia_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Úvod:&lt;/marker&gt;&lt;br/&gt; Ve výchozím nastavení má každý hráč omezený počet respawn tiketů. Při prvním připojení získáte výchozí počet tiketů (20). Poté, co se znovu objevíte, se váš počet lístků sníží o jeden a po 10 minutách se objeví značka zabití v akci (KIA).&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_104_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Získejte nové vstupenky:&lt;/marker&gt;&lt;br/&gt; Hráči mohou zvýšit o jeden tiket, pokud získají své mrtvé tělo zpět na základnu. Vězni se také zvyšují o jeden tiket, ale všem aktuálně připojeným hráčům.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_118_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\medical_gui\ui\bodybag.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Tělo mrtvého hráče:&lt;/marker&gt;&lt;br/&gt; Každý hráč může získat tělo mrtvého hráče:&lt;br/&gt; - &lt;img image='\z\ace\addons\medical_treatment\ui\bodybag_ca.paa' width='13' height='13'/&gt; Vkládání mrtvého těla do vaku na tělo. Dávejte pozor, pokud se vaše vozidlo zničí, všechno se ztratí!&lt;br/&gt; - Odneste to do logistického bodu.&lt;br/&gt; - Komunikujte s logistickým bodem&lt;br/&gt; - &lt;img image='\A3\Data_F_AoW\Logos\arma3_aow_logo_ca.paa' width='13' height='13'/&gt; Vyberte „Získejte lístky z vaku na tělo nebo vězně“&lt;br/&gt; Lístek z pytle na mrtvoly dostane mrtvé tělo hráče (i když není připojen).&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F_Orange\Data\CfgVehicles\Land_Bodybag_01_black_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\captives\UI\handcuff_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt; Vězni &lt;img image='\z\ace\addons\captives\UI\Surrender_ca.paa' width='13' height='13'/&gt; postupujte stejným způsobem jako tělo mrtvého hráče bez potřeby vaku na tělo. Vězeň musí být naživu, ale může být v bezvědomí.&lt;br/&gt;&lt;br/&gt; &lt;img image='a3\Missions_F_AoW\Data\Img\Artwork\Landscape\showcase_aow_picture_106_co.paa' width='355' height='200'/&gt;</Czech>
@@ -241,13 +223,13 @@
         </Container>
         <Container name="Documentation: IED">
             <Key ID="STR_BTC_HAM_DOC_IED_TEXT">
-                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;IED:&lt;/marker&gt;&lt;br/&gt; Any object could be an IED or a fake IED.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Detection:&lt;/marker&gt;&lt;br/&gt; Approach IED carefully (DO NOT rotate while you are walking: prefer walk, stop, rotate, walk again etc). Turn On your mine detector (VMH3 or VMMH3) and search for a charge in a circle of 2 meter around.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Defuse:&lt;/marker&gt;&lt;br/&gt; If you are an engineer and have a defusal kit, you can disarm it. You can also blow them off with high caliber and explosive satchels.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Clean up:&lt;/marker&gt;&lt;br/&gt; You can remove wreck or object around IED or fake IED by driving a MT-LB in their direction. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\UK3CB_KRG_B_MTLB_PKT.jpg' width='355' height='200'/&gt;</Original>
+                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;IED:&lt;/marker&gt;&lt;br/&gt; Any object could be an IED or a fake IED.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Detection:&lt;/marker&gt;&lt;br/&gt; Approach IED carefully (DO NOT rotate while you are walking: prefer walk, stop, rotate, walk again etc). Turn On your mine detector (VMH3 or VMMH3) and search for a charge in a circle of 2 meter around.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Defuse:&lt;/marker&gt;&lt;br/&gt; If you are an engineer and have a defusal kit, you can disarm it. You can also blow them off with high caliber and explosive satchels.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Clean up:&lt;/marker&gt;&lt;br/&gt; You can remove wreck or object around IED or fake IED by driving a Nemmera in their direction. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\B_APC_Tracked_01_CRV_F.jpg' width='355' height='200'/&gt;</Original>
                 <Spanish>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; Cualquier objeto puede ser un artefacto explosivo improvisado, acérquese a él con cuidado (NO rote mientras camina: prefiera caminar, detenerse, rotar, volver a caminar, etc.). Encienda su detector de minas (VMH3 o VMMH3) y busque una carga en un círculo de 2 metros alrededor.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; Si usted es ingeniero y tiene un kit de desactivación, puede desarmarlo.&lt;br/&gt; También puedes volarlos con explosivos y fuego de alto calibre.</Spanish>
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; Jedes Objekt kann eine IED sein, seien sie ensprechen Vorsichtig und machen Sie keine hastigen Bewegungen (NICHT drehen wenn man läuft: besser gehen, stop, drehen, gehen und so weiter). Schalten Sie ihren Minendetektor (VMH3 oder VMMH3) ein und suchen sie in eim 2m Radius nach der Ladung.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; Wenn Sie ein Ingenieur sind und ein Entschärfungskit dabei habe, können Sie die Sprengladung entschärfen.&lt;br/&gt; Es is ebenfalls möglich die IED mithilfe von hohen Kalibern oder Sprengladungen zu entfernen (kontrollierte Explosion).</German>
                 <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa' width='20' height='20'/&gt; Qualquer objeto pode ser um IED, aproxime-o com cuidado (NÃO vire-se enquanto estiver andando: ande, pare, olhe, ande de novo, etc.). Ative o seu detector de minas (VMH3 ou VMMH3) e procure uma carga em um círculo de 2 metros ao redor.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; Se você é um engenheiro e possui um kit de desarme, você pode desarmá-lo.&lt;br/&gt; Também é possível destruir o IED usando grosso calibre ou explosivos (explosão controlada).</Portuguese>
-                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;简易爆炸装置(IED):&lt;/marker&gt;&lt;br/&gt; 任何物体都有可能是IED, 或者是假IED。&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;探测:&lt;/marker&gt;&lt;br/&gt; 任何物体都可能是一个简易爆炸装置(IED), 小心地接近它(切勿在行走的同时转身, 而应当"走-停下-转身-继续走")。打开你的探雷器(VMH3或VMMH3), 在2米范围内寻找炸弹。&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;拆除:&lt;/marker&gt;&lt;br/&gt; 如果你是工程师并且携带了拆弹工具, 你就可以拆除它。你也可以使用大口径子弹或者炸药包来引爆它。&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;清理:&lt;/marker&gt;&lt;br/&gt; 你可以通过驾驶豹式装甲车(MT-LB)朝向IED或假IED, 来移除它们周围的残骸或物体。&lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\UK3CB_KRG_B_MTLB_PKT.jpg' width='355' height='200'/&gt;</Chinesesimp>
-                <French>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;EEI:&lt;/marker&gt;&lt;br/&gt; Tout objet peut être un EEI ou un faux EEI.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Détection:&lt;/marker&gt;&lt;br/&gt; Approchez-vous prudemment du EEI (NE faites PAS pivoter pendant que vous marchez: préférez marcher, arrêter, tourner, marcher à nouveau, etc.). Allumez votre détecteur de mines (VMH3 ou VMMH3) et recherchez une charge dans un cercle de 2 mètres autour.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Désarmer:&lt;/marker&gt;&lt;br/&gt; Si vous êtes ingénieur et que vous possédez un kit de désamorçage, vous pouvez le désarmer. Vous pouvez également les faire sauter avec des armes de gros calibres et des charges explosives.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Nettoyer:&lt;/marker&gt;&lt;br/&gt; Vous pouvez retirer une épave ou un objet autour d'EEI ou de faux EEI avec un MT-LB en avançant dans leur direction. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\UK3CB_KRG_B_MTLB_PKT.jpg' width='355' height='200'/&gt;</French>
-                <Czech>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;IED:&lt;/marker&gt;&lt;br/&gt; Jakýkoli předmět může být IED nebo falešné IED.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Detekce:&lt;/marker&gt;&lt;br/&gt; Přistupujte k IED opatrně (NEOTÁČEJTE se při chůzi: raději jděte, zastavte se, otočte se, znovu jděte atd.). Zapněte svůj detektor min (VMH3 nebo VMMH3) a hledejte náboj v kruhu 2 metry kolem.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Zneškodnit:&lt;/marker&gt;&lt;br/&gt; Pokud jste inženýr a máte zneškoďnovací sadu, můžete ji odzbrojit. Můžete je také odpálit pomocí vysoce kvalitních a výbušných brašen.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Clean up:&lt;/marker&gt;&lt;br/&gt; Vrak nebo předmět kolem IED nebo falešného IED můžete odstranit tím, že pojedete v MT-LB v jejich směru.&lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\UK3CB_KRG_B_MTLB_PKT.jpg' width='355' height='200'/&gt;</Czech>
+                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;简易爆炸装置(IED):&lt;/marker&gt;&lt;br/&gt; 任何物体都有可能是IED, 或者是假IED。&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;探测:&lt;/marker&gt;&lt;br/&gt; 任何物体都可能是一个简易爆炸装置(IED), 小心地接近它(切勿在行走的同时转身, 而应当"走-停下-转身-继续走")。打开你的探雷器(VMH3或VMMH3), 在2米范围内寻找炸弹。&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;拆除:&lt;/marker&gt;&lt;br/&gt; 如果你是工程师并且携带了拆弹工具, 你就可以拆除它。你也可以使用大口径子弹或者炸药包来引爆它。&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;清理:&lt;/marker&gt;&lt;br/&gt; 你可以通过驾驶豹式装甲车(Nemmera)朝向IED或假IED, 来移除它们周围的残骸或物体。&lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\B_APC_Tracked_01_CRV_F.jpg' width='355' height='200'/&gt;</Chinesesimp>
+                <French>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;EEI:&lt;/marker&gt;&lt;br/&gt; Tout objet peut être un EEI ou un faux EEI.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Détection:&lt;/marker&gt;&lt;br/&gt; Approchez-vous prudemment du EEI (NE faites PAS pivoter pendant que vous marchez: préférez marcher, arrêter, tourner, marcher à nouveau, etc.). Allumez votre détecteur de mines (VMH3 ou VMMH3) et recherchez une charge dans un cercle de 2 mètres autour.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Désarmer:&lt;/marker&gt;&lt;br/&gt; Si vous êtes ingénieur et que vous possédez un kit de désamorçage, vous pouvez le désarmer. Vous pouvez également les faire sauter avec des armes de gros calibres et des charges explosives.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Nettoyer:&lt;/marker&gt;&lt;br/&gt; Vous pouvez retirer une épave ou un objet autour d'EEI ou de faux EEI avec un Nemmera en avançant dans leur direction. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\B_APC_Tracked_01_CRV_F.jpg' width='355' height='200'/&gt;</French>
+                <Czech>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\mine_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;IED:&lt;/marker&gt;&lt;br/&gt; Jakýkoli předmět může být IED nebo falešné IED.&lt;br/&gt; &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\IEDLandSmall_F.jpg' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\ui\icon_mineDetectorOn.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Detekce:&lt;/marker&gt;&lt;br/&gt; Přistupujte k IED opatrně (NEOTÁČEJTE se při chůzi: raději jděte, zastavte se, otočte se, znovu jděte atd.). Zapněte svůj detektor min (VMH3 nebo VMMH3) a hledejte náboj v kruhu 2 metry kolem.&lt;br/&gt; &lt;img image='\z\ace\addons\minedetector\data\equip\w_vmh3_ca.paa' width='70' height='100'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\UI\Defuse_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Zneškodnit:&lt;/marker&gt;&lt;br/&gt; Pokud jste inženýr a máte zneškoďnovací sadu, můžete ji odzbrojit. Můžete je také odpálit pomocí vysoce kvalitních a výbušných brašen.&lt;br/&gt; &lt;img image='\z\ace\addons\explosives\Data\UI\Pliers.paa' width='50' height='50'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\armor_f_beta\APC_Tracked_01\Data\UI\APC_Tracked_01_CRV_ca.paa' width='30' height='20'/&gt; &lt;marker name='blufor_base'&gt;Clean up:&lt;/marker&gt;&lt;br/&gt; Vrak nebo předmět kolem IED nebo falešného IED můžete odstranit tím, že pojedete v Nemmera v jejich směru.&lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\B_APC_Tracked_01_CRV_F.jpg' width='355' height='200'/&gt;</Czech>
             </Key>
         </Container>
         <Container name="Documentation: Intel">
@@ -272,7 +254,7 @@
                 <Czech>Reputace</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_DOC_REPUTATION_TEXT">
-                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;System:&lt;/marker&gt;&lt;br/&gt; At the beginning you have a very low reputation level, so civilians won't help you in revealing important information about the Oplitas, they will likely lie instead. Reputation can be ask to civilian. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_picture_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Good actions:&lt;/marker&gt;&lt;br/&gt; Helping the local population by fighting the Oplitas, disarming IED's, heal civilians, give banana, remove tag with spraypaint , remove tag with spraypaint red, succed side mission and destroy cache/hideout will rise your reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_4_co.paa' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\Ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Bad actions:&lt;/marker&gt;&lt;br/&gt; Bad actions cause bad effects: killing civilians/animals, mutilating alive/dead civilians/animals, firing near civilians for no reason, firing to civilian car, remove wheels, remove banana, damaging/destroying buildings, breaking door lock, losing player's vehicles and player respawns will decrease your reputation. Aborting a side mission does not affect reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_3_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_artwork.jpg' width='362' height='512' /&gt; </Original>
+                <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;System:&lt;/marker&gt;&lt;br/&gt; At the beginning you have a very low reputation level, so civilians won't help you in revealing important information about the Oplitas, they will likely lie instead. Reputation can be ask to civilian. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_picture_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Good actions:&lt;/marker&gt;&lt;br/&gt; Helping the local population by fighting the Oplitas, disarming IED's, heal civilians, put civilians killed by players in grave near church or chapel (50 m), give banana, remove tag with spraypaint, remove tag with spraypaint red, succeed side mission and destroy, cache/hideout will rise your reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_4_co.paa' width='355' height='200' /&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\Ui_f\data\GUI\Cfg\Debriefing\endDefault_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Bad actions:&lt;/marker&gt;&lt;br/&gt; Bad actions cause bad effects: killing civilians/animals surrounded or captive enemy, mutilating alive/dead civilians/animals, firing near civilians for no reason, firing to civilian car, remove wheels, remove banana, damaging/destroying buildings, breaking door lock, losing player's vehicles and player respawns will decrease your reputation. Aborting a side mission does not affect reputation. &lt;br/&gt;&lt;br/&gt; &lt;img image='\a3\missions_f_orange\Data\Img\AAN\aan_3_3_co.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Data_F_Orange\Logos\arma3_orange_artwork.jpg' width='362' height='512' /&gt; </Original>
                 <Spanish>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; La reputación se puede solicitar a los civiles&lt;br/&gt; Las malas acciones causan malos efectos sobre la reputacion.&lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Ayudar a la población local luchando contra los Oplitas y desarmando los artefactos explosivos improvisados aumentará tu reputación; matar civiles, mutilar civiles vivos/muertos, disparar cerca de civiles sin razón alguna, disparar a vehículos civiles, dañar/destruir edificios, perder vehículos, respawns de jugadores disminuirá tu reputación. Al principio tienes un nivel de reputación muy bajo, por lo que los civiles no te ayudarán a revelar información importante sobre los Oplitas, es probable que mientan en su lugar.&lt;br/&gt; Abortar una misión secundaria no afecta a la reputación.</Spanish>
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; Ihr Ansehen bei der Bevölkerung können Sie bei Zivilisten erfragen &lt;br/&gt; Schlechte bzw. böse Handlungen habe zur Folge das ihr Ansehen sinkt. &lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Das Unterstützen der lokalen Bevölkerung, das Entschärfen von IEDs und der aktive Kampf gegen die Oplitas wird sich positiv auf ihr Ansehen auswirken. Negative Aktionen wie zb. das Töten oder verstümmeln von Zivlisten, das grundlose Abfeueren einer Waffe in der Nähe von Zivilisten, das Zerstören oder Beschädigen von Gebäuden, der Angriff auf zivile Fahrzeuge, der Verlust von Fahrzeugen im Allgemeinen oder das Respawnen haben hingegen einen nicht so guten Effekt. Zu Beginn ist Ihr Ansehen nur recht gering, weshalb es sein kann das Zivlisten eher zruückhaltend mit Informationen sind. In manchen Fällen werden die Zivilisten Sie auch einfach belügen.&lt;br/&gt; Das Abbrechen von Nebenaufgaben hat keine Auswirkung auf Ihr Ansehen.</German>
                 <Portuguese>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\talk_ca.paa' width='20' height='20'/&gt; A Reputação entre a população é obtida por meio dos civis &lt;br/&gt; Ações ruins ou más fazem a reputação diminuir. &lt;br/&gt; &lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; Ajudar a população local combatendo os inimigos e desarmando os IED's aumentará sua reputação. Matar civis, mutilar civis vivos/mortos, atirar perto de civis sem motivo, atirar nos veículos civis, danificar/destruir prédios, perder veículos civis, respawns de jogadores diminuirão a reputação. No começo, o nível de reputação é muito baixo, então, os civis não irão ajudá-lo a revelar informações importantes sobre os inimigos ou provavelmente irão mentir.&lt;br/&gt; Cancelar tarefas secundárias não afeta a reputação.</Portuguese>
@@ -355,7 +337,7 @@
             <Key ID="STR_BTC_HAM_DOC_DOOR_TEXT">
                 <Original>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;House doors:&lt;/marker&gt;&lt;br/&gt; Civilian house door can be close. Depend on reputation level, civilian will lock their door and stay inside. Under low, all doors are locked, above normal, all door are unlocked. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Break locked door:&lt;/marker&gt;&lt;br/&gt; You can still enter by breaking door lock with a wirecutter. &lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; Or by using explosive. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </Original>
                 <German>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Haustüren:&lt;/marker&gt;&lt;br/&gt; Türen von Häusern können geschlossen sein. Abhängig von der Reputation werden Zivilisten sich in ihren Häusern aufhalten und die Türen verschließen. Wenn Reputation ist unter Niedrig, alle Türen sind verschlossen, wenn über Normal, alle Türen sind offen. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Verschlossene Türen aufbrechen:&lt;/marker&gt;&lt;br/&gt; Du kannst verschlossene Türen mit dem Kabelschneider öffnen. &lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; Oder aufgesprengt werden. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </German>
-                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;屋门:&lt;/marker&gt;&lt;br/&gt; 平民居住的房屋可能会锁门。基于声誉水平, 平民将会锁上他们的屋门并待在屋里。在声誉低时, 所有屋门均会上锁, 在声誉一般时, 所有屋门均不会上锁。&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;撬锁:&lt;/marker&gt;&lt;br/&gt; 你仍然可以使用剪线钳来撬锁, 从而进入房屋。&lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; 也可以使用炸药破门。 &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </Original></Chinesesimp>
+                <Chinesesimp>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;屋门:&lt;/marker&gt;&lt;br/&gt; 平民居住的房屋可能会锁门。基于声誉水平, 平民将会锁上他们的屋门并待在屋里。在声誉低时, 所有屋门均会上锁, 在声誉一般时, 所有屋门均不会上锁。&lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;撬锁:&lt;/marker&gt;&lt;br/&gt; 你仍然可以使用剪线钳来撬锁, 从而进入房屋。&lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; 也可以使用炸药破门。 &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </Chinesesimp>
                 <Czech>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;House doors:&lt;/marker&gt;&lt;br/&gt; Dveře civilního domu lze zavřít. V závislosti na úrovni reputace civilista zamkne dveře a zůstane uvnitř. Při nízkém jsou všechny dveře zamčené, nad normálem jsou všechny dveře odemčené. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Rozbijte zamčené dveře:&lt;/marker&gt;&lt;br/&gt; Stále můžete vstoupit rozbitím zámku dveří velkými kleštěmi. &lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; Nebo pomocí výbušniny. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </Czech>
                 <French>&lt;img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Portes:&lt;/marker&gt;&lt;br/&gt; Les portes des maisons civiles peuvent être fermées. Selon le niveau de réputation, le civil verrouillera sa porte et restera à l’intérieur. En réputation basse, toutes les portes sont verrouillées, au-dessus de normale, toutes les portes sont déverrouillées. &lt;br/&gt;&lt;br/&gt; &lt;img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' width='20' height='20'/&gt; &lt;marker name='blufor_base'&gt;Porte verrouillée:&lt;/marker&gt;&lt;br/&gt; Vous pouvez toujours entrer en cassant la serrure avec une pince coupante. &lt;img image='\z\ace\addons\logistics_wirecutter\ui\item_wirecutter_ca.paa' width='355' height='200'/&gt; &lt;br/&gt;&lt;br/&gt; Ou en utilisant des explosifs. &lt;img image='\A3\EditorPreviews_F\Data\CfgVehicles\Claymore_F.jpg' width='355' height='200'/&gt; </French>
             </Key>
@@ -372,7 +354,11 @@
                 <Czech>&lt;&lt; Časové možnosti &gt;&gt;</Czech>
             </Key>
         </Container>
-        <Container name="Parameters: Database">
+        <Container name="Parameters: Server management">
+            <Key ID="STR_BTC_HAM_PARAM_DB_TITLE">
+                <Original>&lt;&lt; Server management &gt;&gt;</Original>
+                <French>&lt;&lt; Gestion du serveur &gt;&gt;</French>
+            </Key>
             <Key ID="STR_BTC_HAM_PARAM_DB_LOAD">
                 <Original>Load the savegame (if available)</Original>
                 <German>Spielstand wird geladen (wenn verfügbar)</German>
@@ -422,6 +408,10 @@
                 <Chinesesimp>自动重启/关闭服务器前的时间</Chinesesimp>
                 <French>Temps avant le redémarrage / arrêt automatique du serveur</French>
                 <Czech>Čas před automatickým restartem/vypnutím serveru</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_PARAM_DB_HRESTARTTIME">
+                <Original>Hour of auto restart/shutdown server</Original>
+                <French>Heure de l'auto restart/arrêt du serveur</French>
             </Key>
         </Container>
         <Container name="Parameters: Factions">
@@ -615,6 +605,10 @@
                 <French>Type de placement des EEI:</French>
                 <Czech>Typ umístění IED:</Czech>
             </Key>
+			<Key ID="STR_BTC_HAM_PARAM_IED_POWER">
+                <Original>Power of IED explosion:</Original>
+                <French>Puissance de l'explosion:</French>
+            </Key>
             <Key ID="STR_BTC_HAM_PARAM_IED_PLACEMENT_MIDDLE">
                 <Original>Middle</Original>
                 <German>Straßenmitte</German>
@@ -675,7 +669,7 @@
                 <Original>Density of intel in house:</Original>
                 <Chinesesimp>房屋内的情报密度:</Chinesesimp>
                 <Czech>Hustota intelu v domě:</Czech>
-                <French>Densité du renseignements dans les maisons: </French>
+                <French>Densité du renseignements dans les maisons :</French>
             </Key>
         </Container>
         <Container name="Parameters: Respawn">
@@ -693,12 +687,19 @@
                 <French>Emplacements de réapparition disponibles:</French>
                 <Czech>Dostupná místa obnovení:</Czech>
             </Key>
-            <Key ID="STR_BTC_HAM_RESP_FOBTOBASE">
-                <Original>Allow respawn from FOB to base:</Original>
-                <German>Erlaube Respawn von FOB zur Basis:?</German>
-                <Chinesesimp>允许从FOB重新部署至基地</Chinesesimp>
-                <French>Autoriser la réapparition sur FOB à la base:</French>
-                <Czech>Povolit respawn z FOB na základnu:</Czech>
+            <Key ID="STR_BTC_HAM_RESP_OUTSIDEBASE">
+                <Original>Enable respawn menu access from outside the base:</Original>
+                <German>Enable respawn menu access from outside the base:</German>
+                <Chinesesimp>Enable respawn menu access from outside the base:</Chinesesimp>
+                <French>Enable respawn menu access from outside the base:</French>
+                <Czech>Enable respawn menu access from outside the base:</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_OUTSIDETIMEOUT">
+                <Original>Add a 1 min timeout for accessing the respawn menu on vehicle and player:</Original>
+                <German>Add a 1 min timeout for accessing the respawn menu on vehicle and player:</German>
+                <Chinesesimp>Add a 1 min timeout for accessing the respawn menu on vehicle and player:</Chinesesimp>
+                <French>Add a 1 min timeout for accessing the respawn menu on vehicle and player:</French>
+                <Czech>Add a 1 min timeout for accessing the respawn menu on vehicle and player:</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_RESP_FOBRALLY">
                 <Original>FOB and Rallypoint</Original>
@@ -707,12 +708,26 @@
                 <French>FOB et Rallypoint</French>
                 <Czech>FOB and Rallypoint</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_RESP_FOB">
+                <Original>FOB</Original>
+                <German>FOB</German>
+                <Chinesesimp>FOB</Chinesesimp>
+                <French>FOB</French>
+                <Czech>FOB</Czech>
+            </Key>
             <Key ID="STR_BTC_HAM_RESP_FOBRALLYHELO">
                 <Original>FOB, Rallypoint and Helo</Original>
                 <German>FOB, Ralleypoints und Helo</German>
                 <Chinesesimp>FOB、集合点和可重生载具</Chinesesimp>
                 <French>FOB, Rallypoint et Helo</French>
                 <Czech>FOB, Rallypoint and Helo</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_FOBHELO">
+                <Original>FOB and Helo</Original>
+                <German>FOB und Helo</German>
+                <Chinesesimp>FOB and Helo</Chinesesimp>
+                <French>FOB et Helo</French>
+                <Czech>FOB and Helo</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_RESP_FOBRALLYHELI">
                 <Original>FOB, Rallypoint and Transport helicopter</Original>
@@ -721,12 +736,26 @@
                 <French>FOB, Rallypoint, Hélicoptère de transport</French>
                 <Czech>FOB, Rallypoint a Transportní vrtulník</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_RESP_FOBHELI">
+                <Original>FOB and Transport helicopter</Original>
+                <German>FOB und Transporthubschrauber</German>
+                <Chinesesimp>FOB and Transport helicopter</Chinesesimp>
+                <French>FOB et Hélicoptère de transport</French>
+                <Czech>FOB a Transportní vrtulník</Czech>
+            </Key>
             <Key ID="STR_BTC_HAM_RESP_FOBRALLYHELIVEHI">
                 <Original>FOB, Rallypoint, Transport helicopter and Transport vehicle</Original>
                 <German>FOB, Rallypoints, Transporthubschrauber und Transportfahrzeuge</German>
                 <Chinesesimp>FOB、集合点、运输直升机和运输车辆</Chinesesimp>
                 <French>FOB, Rallypoint, Hélicoptère de transport, Véhicule de transport</French>
                 <Czech>FOB, Rallypoint, Transportní vrtulník a Transportní vozidlo</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_FOBHELIVEHI">
+                <Original>FOB, Transport helicopter and Transport vehicle</Original>
+                <German>FOB, Transporthubschrauber und Transportfahrzeuge</German>
+                <Chinesesimp>FOB, Transport helicopter and Transport vehicle</Chinesesimp>
+                <French>FOB, Hélicoptère de transport, Véhicule de transport</French>
+                <Czech>FOB, Transportní vrtulník a Transportní vozidlo</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_RESP_FOBRALLYHELIVEHILEADER">
                 <Original>FOB, Rallypoint, Transport helicopter, Transport vehicle and Leader</Original>
@@ -735,6 +764,13 @@
                 <French>FOB, Rallypoint, Hélicoptère de transport, Véhicule de transport et Leader</French>
                 <Czech>FOB, Rallypoint, Transportní vrtulník, Transportní vozidlo a Leader</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_RESP_FOBHELIVEHIPLAYER">
+                <Original>FOB, Transport helicopter, Transport vehicle and Player</Original>
+                <German>FOB, Transport helicopter, Transport vehicle and Player</German>
+                <Chinesesimp>FOB, Transport helicopter, Transport vehicle and Player</Chinesesimp>
+                <French>FOB, Hélicoptère de transport, Véhicule de transport et Joueur</French>
+                <Czech>FOB, Transportní vrtulník, Transportní vozidlo a Player</Czech>
+            </Key>
             <Key ID="STR_BTC_HAM_RESP_RALLYTIMER">
                 <Original>Time before rallypoint self-destruction:</Original>
                 <German>Zeit, bevor sich Ralleypoints selbst zerstören:?</German>
@@ -742,12 +778,43 @@
                 <French>Temps avant l'autodestruction du point de ralliement:</French>
                 <Czech>Doba před sebezničením shromažďovacího bodu:</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_RESP_TIMEOUTFOBHELIVEHIPLAYER">
+                <Original>FOB, Helo, Transport helicopter, Transport vehicle and Player</Original>
+                <French>FOB, Helo, Hélicoptère de transport, Véhicule de transport et Joueur</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TIMEOUTFOBHELOVEHIPLAYER">
+                <Original>Helo, Transport helicopter, Transport vehicle and Player</Original>
+                <French>Helo, Hélicoptère de transport, Véhicule de transport et Joueur</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TIMEOUTHELIVEHIPLAYER">
+                <Original>Transport helicopter, Transport vehicle and Player</Original>
+                <French>Hélicoptère de transport, Véhicule de transport et Joueur</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TIMEOUTVEHIPLAYER">
+                <Original>Transport vehicle and Player</Original>
+                <French>Véhicule de transport et Joueur</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TIMEOUTPLAYER">
+                <Original>Player</Original>
+                <French>Joueur</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_ACTION_REDEPLOYFOB">
+                <Original>Re-deploy FOB/vehicles</Original>
+                <German>Wiedereinstieg FOB/Fahrzeugen</German>
+                <Chinesesimp>重新部署至FOB/载具</Chinesesimp>
+                <French>Se redéployer sur FOB/vehicles</French>
+                <Czech>Znovu nasadit FOB/vozidla</Czech>
+            </Key>
             <Key ID="STR_BTC_HAM_RESP_TICKETSATSTART">
                 <Original>Number of tickets at mission start:</Original>
                 <German>Anzahl der Tickets bei Missionsstart</German>
                 <Chinesesimp>任务开始时的重生票数:</Chinesesimp>
                 <Czech>Počet životu na začátku mise:</Czech>
                 <French>Nombre de ticket au début de la mission :</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TICKETSLOST">
+                <Original>Number of tickets lost per death:</Original>
+                <French>Nombre de ticket perdu par mort :</French>
             </Key>
             <Key ID="STR_BTC_HAM_RESP_TICKETSHARE">
                 <Original>Tickets are share between:</Original>
@@ -762,6 +829,26 @@
                 <Chinesesimp>相同阵营的玩家</Chinesesimp>
                 <Czech>Hráči stejné frakce</Czech>
                 <French>Joueurs de la même faction</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_TICKETPRISONER">
+                <Original>Attribute tickets from prisoners to (Enable only if tickets are not share):</Original>
+                <French>Nombre de ticket que rapporte un prisonier (Activer cette option seulement si les tickets ne sont pas partagés) : </French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_ALLCONNECTED">
+                <Original>All connected players</Original>
+                <French>A tous les joueurs connectés</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_PLAYER">
+                <Original>To the player interacting with the logistic point</Original>
+                <French>Au joueur interagissant avec le point logistique</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_DEADPLAYER">
+                <Original>To connected player with 0 ticket left</Original>
+                <French>Au joueur connecté avec un solde de 0 ticket</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_RESP_LOWESTPLAYER">
+                <Original>To connected player with the lowest ticket number (0 included)</Original>
+                <French>Au joueur avec le plus faible solde de ticket (0 inclus)</French>
             </Key>
             <Key ID="STR_BTC_HAM_RESP_NOTSHARE">
                 <Original>Not share</Original>
@@ -783,6 +870,10 @@
                 <Chinesesimp>ACE军火库在玩家死亡重生后可用:</Chinesesimp>
                 <French>Arsenal ACE disponible après avoir était tué:</French>
                 <Czech>ACE Arsenal dostupný při respawnu po zabití:</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_PARAM_SLOT_ISSHARE">
+                <Original>Each slot is share between players</Original>
+                <French>Les slots sont partagés entre tous les joueurs</French>
             </Key>
         </Container>
         <Container name="Parameters: AI Skill">
@@ -807,7 +898,7 @@
                 <German>Verwackeln beim Zielen</German>
                 <Portuguese>Habilidade de Pontaria</Portuguese>
                 <Chinesesimp>瞄准抖动(AimingShake)</Chinesesimp>
-                <French>TremblementDeVisée</French>
+                <French>Tremblement de visée</French>
                 <Czech>Třes zaměřování</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SKILL_AIMSPEED">
@@ -815,7 +906,7 @@
                 <German>Zielgeschwindigkeit</German>
                 <Portuguese>Velocidade de Pontaria</Portuguese>
                 <Chinesesimp>瞄准速度(AimingSpeed)</Chinesesimp>
-                <French>VitesseDeVisée</French>
+                <French>Vitesse de visée</French>
                 <Czech>Rychlost zaměřování</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SKILL_SPOTDIST">
@@ -823,7 +914,7 @@
                 <German>Aufklärungsentfernung</German>
                 <Portuguese>Distância de Reconhecimento</Portuguese>
                 <Chinesesimp>目标识别距离(SpotDistance)</Chinesesimp>
-                <French>DistanceDeRepérage</French>
+                <French>Distance de repérage</French>
                 <Czech>SpotDistance</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SKILL_SPOTTIME">
@@ -831,7 +922,7 @@
                 <German>Aufklärungsgeschwindigkeit</German>
                 <Portuguese>Velocidade de Reconhecimento</Portuguese>
                 <Chinesesimp>目标识别时间(SpotTime)</Chinesesimp>
-                <French>TempsDétection</French>
+                <French>Temps de détection</French>
                 <Czech>SpotTime</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_SKILL_COURAGE">
@@ -847,7 +938,7 @@
                 <German>Nachladegeschwindigkeit</German>
                 <Portuguese>Velocidade de Recarga</Portuguese>
                 <Chinesesimp>装填时间(ReloadSpeed)</Chinesesimp>
-                <French>VitesseDeRechargement</French>
+                <French>Vitesse de rechargement</French>
                 <Czech>Rychlost přebíjení</Czech>
             </Key>
         </Container>
@@ -874,6 +965,14 @@
                 <Chinesesimp>化学战:</Chinesesimp>
                 <French>Guerre chimique:</French>
                 <Czech>Chemická válka:</Czech>
+            </Key>
+            <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_CHEM_SIDES">
+                <Original>Chemical side missions:</Original>
+                <French>Missions secondaires chimiques :</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_CHEM_CACHE_PROBABILITY">
+                <Original>Chemical weapon cache probability:</Original>
+                <French>Probabilité de cache d'armes chimiques :</French>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_GAMEPLAY_SPECT">
                 <Original>Spectrum devices:</Original>
@@ -1062,6 +1161,10 @@
                 <Chinesesimp>仅限载具</Chinesesimp>
                 <Czech>na vozidle</Czech>
                 <French>Sur les véhicules</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_PARAM_OTHER_FLAGVEHLEADER">
+                <Original>On vehicle and team leader</Original>
+                <French>Sur les véhicules et le team leader</French>
             </Key>
             <Key ID="STR_BTC_HAM_PARAM_OTHER_FLAGVEHPLAYER">
                 <Original>On vehicle and players</Original>
@@ -1482,7 +1585,7 @@
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_RESC_BODYBAG_DESC">
                 <Original>%1 has been killed. Place %1 in a body bag.</Original>
-                <German>%1 wurde getötet. Bergen Sie seine Leiche mithilfe eines Leichsacks.</German
+                <German>%1 wurde getötet. Bergen Sie seine Leiche mithilfe eines Leichsacks.</German>
                 <Chinesesimp>%1 已经阵亡。将 %1 装进尸体袋。</Chinesesimp>
                 <French>%1 a été tué. Placez %1 dans un sac mortuaire.</French>
                 <Czech>%1 byl zabit. Umístěte %1 do vaku na tělo.</Czech>
@@ -1801,10 +1904,10 @@
                 <Czech>Odstraňte odpad v %1</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_RUBBISH_DESC">
-                <Original>Civilian population reported many rubbish on road making driving difficult around %1. They are requesting your help to remove them with a MT-LB.</Original>
+                <Original>Civilian population reported many rubbish on road making driving difficult around %1. They are requesting your help to remove them with a Nemmera.</Original>
                 <German>Die Bevölkerung meldet viel Müll auf den Straßen bei %1. Dieser macht das fahren auf den Straßen fast unmöglich. Sie benötigen unsere Unterstützung um den Müll mit dem Nemera zu entfernen</German>
-                <Chinesesimp>平民报告称 %1 附近的道路上有许多垃圾, 导致行车困难。平民请求您派遣豹式装甲车(MT-LB)来清除这些垃圾。</Chinesesimp>
-                <French>La population civile a signalé de nombreux déchets sur la route rendant la conduite difficile autour de %1. Ils demandent votre aide pour les supprimer avec un MT-LB.</French>
+                <Chinesesimp>平民报告称 %1 附近的道路上有许多垃圾, 导致行车困难。平民请求您派遣豹式装甲车(Nemmera)来清除这些垃圾。</Chinesesimp>
+                <French>La population civile a signalé de nombreux déchets sur la route rendant la conduite difficile autour de %1. Ils demandent votre aide pour les supprimer avec un Nemmera.</French>
                 <Czech>Civilní obyvatelstvo hlásilo mnoho odpadků na silnici, což ztěžovalo řízení kolem %1. Žádají vaši pomoc při jejich odstranění pomocí Nemmery.</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_SIDE_RUBBISH_SPOT_TITLE">
@@ -1824,7 +1927,7 @@
         </Container>
         <Container name="Pandemic">
             <Key ID="STR_BTC_HAM_SIDE_PANDEMIC_TITLE">
-                <Original>Contaminate civilians in %1</Original>
+                <Original>Contaminated civilians in %1</Original>
                 <German>Kontaminierte Zivilisten bei %1</German>
                 <Chinesesimp>%1 地区的平民受到感染</Chinesesimp>
                 <Czech>Kontaminovaný civilisti v %1</Czech>
@@ -1850,6 +1953,22 @@
                 <Chinesesimp>搜寻并净化这名平民。跟随红色的血滴并使用化学探测器。</Chinesesimp>
                 <Czech>Prohledejte a dekontaminujte tohoto civilistu. Sledujte kapku červené krve a použijte svůj chemický detektor.</Czech>
                 <French>Recherchez et décontaminez ce civil. Suivez les gouttes de sang rouge et utilisez votre détecteur chimique.</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_SIDE_MASSACRE_TITLE">
+                <Original>%1 massacre</Original>
+                <French>%1 massacre</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_SIDE_MASSACRE_DESC">
+                <Original>Civilians were brutally killed in %1. They are requesting your help to move dead bodies in a grave next to a religious building. To locate killed civilians go to the subtask.</Original>
+                <French>Des civils ont été sauvagement tués en %1. Ils demandent votre aide pour déplacer les cadavres dans une tombe à côté d'un édifice religieux. Pour localiser les civils tués, ouvrez la sous-tâche.</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_SIDE_MASSACRE_C_TITLE">
+                <Original>%1</Original>
+                <French>%1</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_SIDE_MASSACRE_C_DESC">
+                <Original>Move this killed civilian next to a church and dig a grave.</Original>
+                <French>Déplacez ce civil tué près d'une église et creusez une tombe.</French>
             </Key>
         </Container>
     </Package>
@@ -2017,8 +2136,8 @@
                 <Czech>Vyžádejte si pověst</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_ACTION_GIVEFOOD">
-                <Original>Give a Humanitarian Ration</Original>
-                <German>Notration geben</German>
+                <Original>Give a banana</Original>
+                <German>Banane geben</German>
                 <Chinesesimp>给他一根香蕉</Chinesesimp>
                 <Czech>Dejte banán</Czech>
                 <French>Donner une banane</French>
@@ -2065,13 +2184,6 @@
                 <Chinesesimp>重新部署至集合点</Chinesesimp>
                 <French>Se redéployer au point de ralliement</French>
                 <Czech>Znovu rozmístěte shromažďovací body</Czech>
-            </Key>
-            <Key ID="STR_BTC_HAM_ACTION_REDEPLOYFOB">
-                <Original>Re-deploy FOB/vehicles</Original>
-                <German>Wiedereinstieg FOB/Fahrzeugen</German>
-                <Chinesesimp>重新部署至FOB/载具</Chinesesimp>
-                <French>Se redéployer sur FOB/vehicles</French>
-                <Czech>Znovu nasadit FOB/vozidla</Czech>
             </Key>
         </Container>
         <Container name="Action : Arsenal (BIS)">
@@ -2138,14 +2250,48 @@
                 <French>Coller le conteneur</French>
                 <Czech>Vložit kontejner</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_ACTION_COPYPASTE_COPYI">
+                <Original>Copy inventory</Original>
+                <French>Copier l'inventaire</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_ACTION_COPYPASTE_PASTEI">
+                <Original>Paste inventory</Original>
+                <French>Coller l'inventaire</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_ACTION_RESTOREI">
+                <Original>Restore inventory</Original>
+                <French>Restorer l'inventaire</French>
+            </Key>
         </Container>
         <Container name="Action(ACE): Door">
             <Key ID="STR_BTC_HAM_ACTION_DOOR_BREAK">
                 <Original>Break door lock</Original>
                 <German>Brich die Tür auf</German>
-                <French>Casser la serrure</French>
+                <French>Forcer la serrure</French>
                 <Chinesesimp>撬锁</Chinesesimp>
                 <Czech>Rozbijte zámek dveří</Czech>
+            </Key>
+        </Container>
+        <Container name="Action(ACE): Change day time and weather">
+            <Key ID="STR_BTC_HAM_ACTION_SET_DAY">
+                <Original>Set day time</Original>
+                <French>Mettre le jour</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_ACTION_SET_NIGHT">
+                <Original>Set night time</Original>
+                <French>Mettre la nuit</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_ACTION_CHANGE_WEATHER">
+                <Original>Change weather</Original>
+                <French>Changer la météo</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_CHANGE_TIME_ENABLEARSENAL">
+                <Original>Enable change day time for officer on the arsenal box:</Original>
+                <French>Autoriser le changement d'heure pour les officiers sur la caisse arsenal:</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_CHANGE_WEATHER_ENABLEARSENAL">
+                <Original>Enable change weather for officer on the arsenal box:</Original>
+                <French>Autoriser le changement de météo pour les officiers sur la caisse arsenal:</French>
             </Key>
         </Container>
     </Package>
@@ -2709,11 +2855,11 @@
                 <Czech>Není to vedlejší mise, nelze ji zrušit</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_COMMON_REBOOT">
-                <Original>Server reboot in 5min, leave it NOW!</Original>
-                <German>Serverneustart in 5 Minuten. JETZT den Server verlassen</German>
-                <Chinesesimp>服务器将在5分钟后重启, 请立即离开服务器!</Chinesesimp>
-                <French>Redémarrage du serveur dans 5min, décconectez-vous maintenant !</French>
-                <Czech>Server se restartuje za 5 minut</Czech>
+                <Original>Server reboot in %1min, leave it NOW!</Original>
+                <German>Serverneustart in %1 Minuten. JETZT den Server verlassen</German>
+                <Chinesesimp>Server reboot in %1min, leave it NOW!</Chinesesimp>
+                <French>Redémarrage du serveur dans %1min, décconectez-vous maintenant !</French>
+                <Czech>Server se restartuje za %1 minut</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_COMMON_TICKETADD">
                 <Original>Respawn ticket added</Original>
@@ -2736,17 +2882,12 @@
                 <Czech>Zbývá %1 tiketu na respawn</Czech>
                 <French>%1 ticket de respawn restant</French>
             </Key>
+            <Key ID="STR_BTC_HAM_O_COMMON_NOPLAYERFTICKET">
+                <Original>None player need ticket</Original>
+                <French>Aucun joueur n'a besoin de ticket</French>
+            </Key>
         </Container>
         <Container name="Other: Shortcuts">
-            <Key ID="STR_BTC_HAM_O_SHORTC_STOP_TITLE">
-                <Original>Civil Order: Stop!</Original>
-                <Spanish>Orden a Civil: Alto!</Spanish>
-                <German>Befehle (Zivilisten): Stopp!</German>
-                <Portuguese>Ordem ao civil: Pare!</Portuguese>
-                <Chinesesimp>命令平民: 站住!</Chinesesimp>
-                <French>Ordre civil: halte !</French>
-                <Czech>Občane: Stop!</Czech>
-            </Key>
             <Key ID="STR_BTC_HAM_O_SHORTC_STOP_NOTE">
                 <Original>Order a civilian to stop</Original>
                 <Spanish>Ordena a un civil se detenga</Spanish>
@@ -2756,15 +2897,6 @@
                 <French>Ordonner à un civil de s'arrêter</French>
                 <Czech>Nařiďte civilistovi, aby zastavil</Czech>
             </Key>
-            <Key ID="STR_BTC_HAM_O_SHORTC_GETDOWN_TITLE">
-                <Original>Civil Order: Get down!</Original>
-                <Spanish>Orden a Civil: ¡Agáchate!</Spanish>
-                <German>Befehle (Zivilisten): Auf den Boden!</German>
-                <Portuguese>Ordem ao Civil: Pro chão!</Portuguese>
-                <Chinesesimp>命令平民: 趴下!</Chinesesimp>
-                <French>Ordre civil: à terre !</French>
-                <Czech>Občane: Slez!</Czech>
-            </Key>
             <Key ID="STR_BTC_HAM_O_SHORTC_GETDOWN_NOTE">
                 <Original>Order a civilian to get down</Original>
                 <Spanish>Ordena a un civil que se ponga a cubierto</Spanish>
@@ -2773,15 +2905,6 @@
                 <Chinesesimp>命令平民趴下</Chinesesimp>
                 <French>Ordonner à un civil de se mettre à terre</French>
                 <Czech>Přikazuje okolním civilistům, aby si lehli</Czech>
-            </Key>
-            <Key ID="STR_BTC_HAM_O_SHORTC_GOAWAY_TITLE">
-                <Original>Civil Order: Go Away!</Original>
-                <Spanish>Orden a Civil: Vete de aquí!</Spanish>
-                <German>Befehle (Zivilisten): Geh weg!</German>
-                <Portuguese>Ordem ao Civil: Vá embora!</Portuguese>
-                <Chinesesimp>命令平民: 走开!</Chinesesimp>
-                <French>Ordre civil: partez !</French>
-                <Czech>Občane: Jdi pryč!</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_SHORTC_GOAWAY_NOTE">
                 <Original>Order a civilian to go away</Original>
@@ -2821,6 +2944,14 @@
                 <French>Conteneur et cargaison copiés ! Nettoyez la zone avant de faire un coller.</French>
                 <Czech>Kontejner a obsah zkopírovány! Vyčistěte oblast pro přidání nové.</Czech>
             </Key>
+            <Key ID="STR_BTC_HAM_O_PASTE_NOCOPIEDI">
+                <Original>No copied inventory!</Original>
+                <French>L'inventaire n'a pas été copié</French>
+            </Key>
+            <Key ID="STR_BTC_HAM_O_COPY_NOOBJECTS">
+                <Original>No objects around!</Original>
+                <French>Pas d'objet dans les environs !</French>
+            </Key>
         </Container>
         <Container name="Other: Endmission">
             <Key ID="STR_BTC_HAM_O_COMMON_ENDMISSION">
@@ -2853,7 +2984,7 @@
                 <Czech>Úkryt %1 zničen</Czech>
             </Key>
             <Key ID="STR_BTC_HAM_O_EH_HDCACHE_MRK">
-                <Original>Cached %1 destroyed</Original>
+                <Original>Cache %1 destroyed</Original>
                 <Spanish>Cache %1 destruído</Spanish>
                 <German>Waffenlager %1 wurde zerstört</German>
                 <Portuguese>Depósito %1 destruído</Portuguese>
@@ -3073,6 +3204,12 @@
                 <Chinesesimp>只能删除由后勤点创建的物件</Chinesesimp>
                 <French>Impossible de supprimer un objet non créé par le Point Logistique</French>
                 <Czech>Nelze smazat objekt, který nevytvořil Logistic Point</Czech>
+            </Key>
+        </Container>
+        <Container name="Logistic: Rearm">
+            <Key ID="STR_BTC_HAM_LOG_REARM_COMPLETED">
+                <Original>Rearm completed.</Original>
+                <French>Réarmement effectué.</French>
             </Key>
         </Container>
     </Package>

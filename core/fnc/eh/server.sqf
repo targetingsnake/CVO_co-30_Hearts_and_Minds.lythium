@@ -41,13 +41,15 @@ addMissionEventHandler ["BuildingChanged", btc_rep_fnc_buildingchanged];
     }, false] call CBA_fnc_addClassEventHandler;
 } forEach btc_civ_type_veh;
 ["ace_killed", btc_mil_fnc_unit_killed] call CBA_fnc_addEventHandler;
-["ace_repair_setWheelHitPointDamage", {
-    _this remoteExecCall ["btc_rep_fnc_wheelChange", 2];
-}] call CBA_fnc_addEventHandler;
+["ace_repair_setWheelHitPointDamage", btc_rep_fnc_wheelChange] call CBA_fnc_addEventHandler;
 ["ace_disarming_dropItems", btc_rep_fnc_foodRemoved] call CBA_fnc_addEventHandler;
 ["btc_respawn_player", {
     params ["", "_player"];
     [btc_rep_malus_player_respawn, _player] call btc_rep_fnc_change;
+    btc_slots_serialized set [
+        _player getVariable ["btc_slot_key", [0, 0, 0]],
+        [] // Reset serialized data if slot died
+    ];
 }] call CBA_fnc_addEventHandler;
 
 ["ace_explosives_detonate", {
@@ -59,20 +61,32 @@ addMissionEventHandler ["BuildingChanged", btc_rep_fnc_buildingchanged];
     ] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 
+addMissionEventHandler ["PlayerConnected", btc_eh_fnc_playerConnected];
 addMissionEventHandler ["HandleDisconnect", {
-    params ["_headless"];
-    if (_headless in (entities "HeadlessClient_F")) then {
-        deleteVehicle _headless;
+    params ["_player"];
+    if (_player in (entities "HeadlessClient_F")) then {
+        deleteVehicle _player;
     };
+    if (alive _player) then {
+        _player call btc_slot_fnc_serializeState;
+    };
+    false
 }];
+["ace_unconscious", btc_slot_fnc_serializeState] call CBA_fnc_addEventHandler;
+["btc_playerConnected", { 
+    params ["_player", "_ids"];
+    [_player, _player call btc_slot_fnc_createKey, _ids select 4] call btc_slot_fnc_deserializeState_s;
+}] call CBA_fnc_addEventHandler;
 if (btc_p_auto_db) then {
     addMissionEventHandler ["HandleDisconnect", {
-        if ((allPlayers - entities "HeadlessClient_F") isEqualTo []) then {
+        params ["_player"];
+        if ((allPlayers - entities "HeadlessClient_F" - [_player]) isEqualTo []) then {
             [] call btc_db_fnc_save;
         };
     }];
 };
-if (btc_p_chem) then {
+
+if (btc_p_chem_sides || (btc_p_chem_cache_probability > 0)) then {
     ["ace_cargoLoaded", btc_chem_fnc_propagate] call CBA_fnc_addEventHandler;
     ["AllVehicles", "GetIn", {[_this select 0, _this select 2] call btc_chem_fnc_propagate}] call CBA_fnc_addClassEventHandler;
     ["DeconShower_01_F", "init", {
@@ -107,12 +121,24 @@ if (btc_p_set_skill) then {
 ["ace_tagCreated", btc_tag_fnc_eh] call CBA_fnc_addEventHandler; 
 
 if (btc_p_respawn_ticketsAtStart >= 0) then {
-    ["btc_respawn_player", btc_respawn_fnc_player] call CBA_fnc_addEventHandler;
     ["ace_placedInBodyBag", btc_body_fnc_setBodyBag] call CBA_fnc_addEventHandler;
 
     if !(btc_p_respawn_ticketsShare) then {
-        addMissionEventHandler ["PlayerConnected", btc_respawn_fnc_playerConnected];
+        ["btc_playerConnected", btc_respawn_fnc_playerConnected] call CBA_fnc_addEventHandler;
     };
+
+    addMissionEventHandler ["HandleDisconnect", {
+        params ["_unit"];
+        if (
+            ace_respawn_removedeadbodiesdisconnected &&
+            _unit in btc_body_deadPlayers
+        ) then {
+            deleteMarker (_unit getVariable ["btc_body_deadMarker", ""]);
+            private _deadUnits = [[[_unit]] call btc_body_fnc_get] call btc_body_fnc_create;
+            _deadUnit = _deadUnits select 0;
+            btc_body_deadPlayers pushBack _deadUnit;
+        };
+    }];
 };
 
 //Cargo
@@ -126,3 +152,23 @@ if (btc_p_respawn_ticketsAtStart >= 0) then {
         [_obj, 50] call ace_cargo_fnc_setSpace;
     }, true, [], true] call CBA_fnc_addClassEventHandler;
 } forEach ["CUP_MTVR_Base", "Truck_01_base_F"];
+
+["ace_explosives_place", {
+    params ["_explosive", "_dir", "_pitch", "_unit"];
+    _explosive setVariable ["btc_side", side group _unit];
+    btc_explosives pushBack _this;
+}] call CBA_fnc_addEventHandler;
+
+["ace_placedInBodyBag", {
+    params ["_patient", "_bodyBag", "_isGrave", "_medic"];
+    if (
+        isNil {_patient getVariable "btc_rep_playerKiller"}
+    ) exitWith {};
+
+    private _killer = _patient getVariable "btc_rep_playerKiller";
+    if (_isGrave) then {
+        [btc_rep_fnc_grave, [_bodyBag, _medic], 0.2] call CBA_fnc_waitAndExecute;
+    } else {
+        _bodyBag setVariable ["btc_rep_playerKiller", _killer];
+    };
+}] call CBA_fnc_addEventHandler;

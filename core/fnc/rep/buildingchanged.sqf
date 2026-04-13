@@ -1,19 +1,25 @@
 
 /* ----------------------------------------------------------------------------
 Function: btc_rep_fnc_buildingchanged
+
 Description:
     Change reputation on building damage.
+
 Parameters:
     _from - Previous building object. [Object]
     _to - New building object. [Object]
     _isRuin - If changes to ruins. [Boolean]
+
 Returns:
+
 Examples:
     (begin example)
         _result = [] call btc_rep_fnc_buildingchanged;
     (end)
+
 Author:
     mtusnio
+
 ---------------------------------------------------------------------------- */
 
 params [
@@ -22,7 +28,7 @@ params [
     ["_isRuin", false, [false]]
 ];
 
-private _classname = toUpper (([[_from]] call btc_fnc_typeOf) select 0);
+private _classname = toUpper typeOf _from;
 private _malus = [btc_rep_malus_building_damaged, btc_rep_malus_building_destroyed] select _isRuin;
 private _skipCategories = false;
 
@@ -30,8 +36,9 @@ private _skipCategories = false;
 if (
     (getObjectType _from != 1) &&
     !(_from in btc_buildings_changed) ||
+    {_classname isEqualTo ""} ||
     {_classname isKindOf "Wall"} ||
-    {_from call ace_logistics_wirecutter_fnc_isFence}
+    {"GATE" in _classname}
 ) exitWith {};
 
 btc_buildings_changed pushBack _to;

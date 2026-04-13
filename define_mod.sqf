@@ -41,46 +41,36 @@ BIS_respSpecLists = true;                // Show list of available units and loc
         ];
 */
 private _weapons = [];
-
-private _attachments = [];
-
 private _magazines = [];
-
 private _items = [];
+private _backpacks = [];
+
+btc_custom_arsenal = [_weapons, _magazines, _items, _backpacks];
+
+/*
+    Here you can specify which equipment is loaded on player connection.
+*/
 
 private _radio = ["tf_anprc152", "ACRE_BF888S"] select (isClass(configFile >> "cfgPatches" >> "acre_main"));
-
-private _itemsMedical = [];
-
-private _uniforms = [    ];
-
+//Array of colored item: 0 - Desert, 1 - Tropic, 2 - Black, 3 - forest
+private _uniforms = [];
 private _uniformsCBRN = ["U_C_CBRN_Suit_01_Blue_F", "U_B_CBRN_Suit_01_White_F"];
 private _uniformsSniper = [];
-
 private _vests = [];
-
 private _helmets = [];
-
 private _hoods = [];
-
-private _hoodCBRN = ["G_AirPurifyingRespirator_01_F"];
+private _hoodCBRN = "G_AirPurifyingRespirator_01_F";
 private _laserdesignators = [];
 private _night_visions = [];
+private _weapons = [];
 private _weapons_machineGunner = [];
 private _weapons_sniper = [];
 private _bipods = [];
-
 private _pistols = [];
-
 private _launcher_AT = [];
 private _launcher_AA = [];
-
 private _backpacks = [];
-
 private _backpacks_big = [];
-
-private _backpacksUAV = [];
 private _backpackCBRN = [];
 
-btc_custom_arsenal = [_weapons, _attachments, _magazines, _items, _radio, _itemsMedical, _uniforms, _uniformsCBRN, _vests, _helmets, _hoods, _hoodCBRN, _weapons_machineGunner, _weapons_sniper, _pistols, _launcher_AT, _launcher_AA, _backpacks, _backpacks_big, _backpacksUAV,_backpackCBRN];
 btc_arsenal_loadout = [_uniforms, _uniformsCBRN, _uniformsSniper, _vests, _helmets, _hoods, [_hoodCBRN, _hoodCBRN, _hoodCBRN, _hoodCBRN], _laserdesignators, _night_visions, _weapons, _weapons_sniper, _weapons_machineGunner, _bipods, _pistols, _launcher_AT, _launcher_AA, _backpacks, _backpacks_big, [_backpackCBRN, _backpackCBRN, _backpackCBRN, _backpackCBRN], [_radio, _radio, _radio, _radio]];
