@@ -26,7 +26,8 @@ params [
 
 private _useful = values btc_city_all select {
     !(_x getVariable ["occupied", false]) &&
-    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"])
+    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"]) &&
+    ([_x] call cvo_side_fnc_distanceCondition)
 };
 if (_useful isEqualTo []) then {_useful = values btc_city_all;};
 
