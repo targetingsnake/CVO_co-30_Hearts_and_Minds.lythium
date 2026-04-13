@@ -27,7 +27,8 @@ params [
 //// Choose a Marine location occupied \\\\
 private _useful = values btc_city_all select {
     _x getVariable ["occupied", false] &&
-    _x getVariable ["type", ""] isEqualTo "NameMarine"
+    _x getVariable ["type", ""] isEqualTo "NameMarine" &&
+    ([_x] call cvo_side_fnc_distanceCondition)
 };
 if (_useful isEqualTo []) exitWith {[] spawn btc_side_fnc_create;};
 
