@@ -108,6 +108,26 @@ private _p_city_free_trigger = "btc_p_city_free_trigger" call BIS_fnc_getParamVa
 btc_p_flag = "btc_p_flag" call BIS_fnc_getParamValue;
 btc_p_debug = "btc_p_debug" call BIS_fnc_getParamValue;
 
+//<< Custom CVO Parameters >>
+cvo_p_acre_unconcious = "cvo_p_acre_unconcious" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_medical_fullHeal = "cvo_p_medical_fullHeal" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_logistics_crate = "cvo_p_logistics_crate" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_logistics_fortify = "cvo_p_logistics_fortify" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_logistics_custom_construction_array = "cvo_p_logistics_custom_construction_array" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_arsenal = "cvo_p_arsenal" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_arsenal_Tab_custom = "cvo_p_arsenal_Tab_custom" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_arsenal_loadout = "cvo_p_arsenal_loadout" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_env_fastnight = "cvo_p_env_fastnight" call BIS_fnc_getParamValue isEqualTo 1;
+cvo_p_env_fastnightmulti = "cvo_p_env_fastnightmulti" call BIS_fnc_getParamValue;
+
+cvo_p_intel_flags = "cvo_p_intel_flags" call BIS_fnc_getParamValue isEqualTo 1;
+
+cvo_p_side_distance = "cvo_p_side_distance" call BIS_fnc_getParamValue;
+
 switch (btc_p_debug) do {
     case 0 : {
         btc_debug_log = false;
