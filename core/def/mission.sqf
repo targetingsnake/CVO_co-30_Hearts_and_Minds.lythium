@@ -736,7 +736,7 @@ btc_rep_level_low = 200;
 btc_rep_level_normal = 500;
 btc_rep_level_high = 750;
 
-btc_rep_food = "ACE_Banana";
+btc_rep_food = "ACE_Humanitarian_Ration";
 
 //Headless
 btc_units_owners = [];
