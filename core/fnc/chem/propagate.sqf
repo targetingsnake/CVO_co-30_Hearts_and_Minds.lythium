@@ -22,7 +22,7 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-    ["_item", objNull, [objNull]],
+    ["_item", objNull, [objNull, ""]],
     ["_vehicle", objNull, [objNull]]
 ];
 
