@@ -35,6 +35,9 @@ params [
     if (_unit isNotEqualTo player) exitWith {};
     if (ace_map_mapIllumination) then {ace_map_mapIllumination = false;};
     if (isObjectHidden player) exitWith {};
+    if !(isServer) then { // Don't add twice the event in player host
+        ["btc_respawn_player", [_unit, player]] call CBA_fnc_localEvent;
+    };
     ["btc_respawn_player", [_unit, player]] call CBA_fnc_serverEvent;
 }] call CBA_fnc_addEventHandler;
 {
@@ -50,11 +53,13 @@ _player addEventHandler ["WeaponAssembled", btc_civ_fnc_add_leaflets];
 [_player, "WeaponAssembled", {[_thisType, _this] call btc_fob_fnc_rallypointAssemble;}] call CBA_fnc_addBISEventHandler;
 [_player, "WeaponDisassembled", {[_thisType, _this] call btc_fob_fnc_rallypointAssemble;}] call CBA_fnc_addBISEventHandler;
 _player addEventHandler ["GetInMan", btc_ied_fnc_deleteLoop];
+_player addEventHandler ["GetInMan", {_this remoteExecCall ["btc_slot_fnc_serializeState", 2]}];
 _player addEventHandler ["GetOutMan", {
     if (btc_ied_deleteOn > -1) then {
         [btc_ied_deleteOn] call CBA_fnc_removePerFrameHandler;
         btc_ied_deleteOn = -1;
     };
+    _this remoteExecCall ["btc_slot_fnc_serializeState", 2];
 }];
 _player addEventHandler ["WeaponAssembled", {
     params ["_player", "_static"];
@@ -66,7 +71,7 @@ _player addEventHandler ["WeaponAssembled", {
     _this remoteExecCall ["btc_log_fnc_init", 2];
 }] call CBA_fnc_addEventHandler;
 
-if (btc_p_chem) then {
+if (btc_p_chem_sides || (btc_p_chem_cache_probability > 0)) then {
     // Add biopsy
     [missionNamespace, "probingEnded", btc_chem_fnc_biopsy] call BIS_fnc_addScriptedEventHandler;
 
@@ -74,7 +79,7 @@ if (btc_p_chem) then {
     ["DeconShower_01_F", "init", {(_this select 0) setVariable ['bin_deconshower_disableAction', true];}, true, [], true] call CBA_fnc_addClassEventHandler;
     ["DeconShower_02_F", "init", {(_this select 0) setVariable ['bin_deconshower_disableAction', true];}, true, [], true] call CBA_fnc_addClassEventHandler;
 
-    //[] call btc_chem_fnc_ehDetector;
+    [] call btc_chem_fnc_ehDetector;
 };
 
 if (btc_p_spect) then {
@@ -90,12 +95,7 @@ if (btc_p_respawn_arsenal) then {
     [_player, "Respawn", {
         params ["_unit", "_corpse"];
         if (isObjectHidden _corpse) exitWith {};
-        if (cvo_p_arsenal) then {
-            [CVO_arsenal, _unit] call ace_arsenal_fnc_openBox;
-        } else {
-            [btc_gear_object, _unit] call ace_arsenal_fnc_openBox;
-        };
-        
+        [btc_gear_object, _unit] call ace_arsenal_fnc_openBox;
     }] call CBA_fnc_addBISEventHandler;
 };
 
@@ -122,7 +122,22 @@ inGameUISetEventHandler ["Action", '["btc_inGameUISetEventHandler", _this] call 
     (findDisplay 46) displayAddEventHandler ["MouseButtonDown", btc_int_fnc_horn];
 }] call CBA_fnc_waitUntilAndExecute;
 
+if (btc_p_respawn_ticketsAtStart >= 0) then {
+    ["btc_respawn_player", {
+        [
+            [player, btc_player_side] select btc_p_respawn_ticketsShare,
+            btc_p_respawn_ticketsLost
+        ] call BIS_fnc_respawnTickets; // Need to be handle locally
+        _this remoteExecCall ["btc_respawn_fnc_player", 2];
+    }] call CBA_fnc_addEventHandler;
+};
+
 ["ace_marker_flags_placed", {
     params ["_unit", "_flag"];
+    _flag remoteExecCall ["btc_log_fnc_init", 2];
+}] call CBA_fnc_addEventHandler; 
+
+["ace_flags_placed", {
+    params ["_player", "_flag", "_item"];
     _flag remoteExecCall ["btc_log_fnc_init", 2];
 }] call CBA_fnc_addEventHandler; 

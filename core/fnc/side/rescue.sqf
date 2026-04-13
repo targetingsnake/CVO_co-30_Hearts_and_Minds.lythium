@@ -25,11 +25,9 @@ params [
 ];
 
 //// Choose an occupied City \\\\
-private _useful = btc_city_all select {
-    !isNull _x &&
+private _useful = values btc_city_all select {
     _x getVariable ["occupied", false] &&
-    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"]) &&
-    ([_x] call cvo_side_fnc_distanceCondition)
+    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"])
 };
 
 if (_useful isEqualTo []) exitWith {[] spawn btc_side_fnc_create;};
@@ -51,7 +49,7 @@ private _heli_type = typeOf selectRandom ((btc_vehicles + btc_veh_respawnable) s
 private _heli = createVehicle [_heli_type, _pos, [], 0, "NONE"];
 _heli setVariable ["btc_dont_delete", true];
 _heli setVariable ["ace_cookoff_enableAmmoCookoff", false, true];
-_heli setDamage 1;
+_heli setDamage [1, false];
 _heli enableSimulation false;
 _heli setPos [getPosASL _heli select 0, getPosASL _heli select 1, 0 - 1.5];
 private _pitch = if (random 1 > 0.5) then {
@@ -80,6 +78,7 @@ private _back_taskID = _taskID + "bk";
 private _units = [];
 private _triggers = [];
 {
+    _x setVariable ["kjw_imposters_core_ignore", true, true]; // Prevent KJW Imposters from resetting captive state
     _x setCaptive true;
     removeAllWeapons _x;
     _x setBehaviour "CARELESS";

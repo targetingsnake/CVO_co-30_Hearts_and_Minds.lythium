@@ -25,18 +25,15 @@ params [
 ];
 
 //// Choose two Cities \\\\
-private _usefuls = btc_city_all select {
-    !isNull _x &&
+private _usefuls = values btc_city_all select {
     !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"]) &&
-    !(_x getVariable ["occupied", false])&&
-    ([_x] call cvo_side_fnc_distanceCondition)
+    !(_x getVariable ["occupied", false])
 };
 if (_usefuls isEqualTo []) exitWith {[] spawn btc_side_fnc_create;};
-
 private _city2 = selectRandom _usefuls;
 
 private _area = (getNumber (configFile >> "CfgWorlds" >> worldName >> "MapSize"))/4;
-private _cities = btc_city_all select {!isNull _x && _x distance _city2 > _area};
+private _cities = values btc_city_all select {_x distance _city2 > _area};
 _usefuls = _cities select {
     !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"]) &&
     _x getVariable ["occupied", false]
@@ -143,7 +140,7 @@ for "_i" from 1 to _convoyLength do {
     _trigger setVariable ["captive", _captive];
     _trigger setTriggerArea [15, 15, 0, false];
     _trigger setTriggerActivation [str btc_player_side, "PRESENT", true];
-    _trigger setTriggerStatements ["this", format ["_captive = thisTrigger getVariable 'captive'; deleteVehicle thisTrigger; doStop _captive; [_captive, true] call ace_captives_fnc_setSurrendered; ['%1', 'SUCCEEDED'] call BIS_fnc_taskSetState; [['%2', '%4'], 29, _captive] call btc_task_fnc_create; [['%3', '%4'], 21, btc_create_object_point, typeOf btc_create_object_point] call btc_task_fnc_create;", _surrender_taskID, _handcuff_taskID, _back_taskID, _taskID], ""];
+    _trigger setTriggerStatements ["this", format ["_captive = thisTrigger getVariable 'captive'; deleteVehicle thisTrigger; moveOut _captive; doStop _captive; [_captive, true] call ace_captives_fnc_setSurrendered; ['%1', 'SUCCEEDED'] call BIS_fnc_taskSetState; [['%2', '%4'], 29, _captive] call btc_task_fnc_create; [['%3', '%4'], 21, btc_create_object_point, typeOf btc_create_object_point] call btc_task_fnc_create;", _surrender_taskID, _handcuff_taskID, _back_taskID, _taskID], ""];
     _trigger attachTo [_captive, [0, 0, 0]];
 
     ["ace_captiveStatusChanged", {

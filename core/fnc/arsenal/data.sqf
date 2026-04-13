@@ -31,7 +31,6 @@ params [
 ];
 _arsenalData params [["_weapons", [], [[]]], ["_magazines", [], [[]]], ["_items", [], [[]]], ["_backpacks", [], [[]]]];
 
-
 //BIS Arsenal
 if (_arsenalType < 3) then {
     if (_arsenalRestrict isEqualTo 1) then {

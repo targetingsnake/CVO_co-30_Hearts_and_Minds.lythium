@@ -33,10 +33,11 @@ private _cities_status = +(profileNamespace getVariable [format ["btc_hm_%1_citi
     _x params ["_id", "_initialized", "_spawn_more", "_occupied", "_data_units", "_has_ho", "_ho_units_spawned", "_ieds", "_has_suicider",
         ["_data_animals", [], [[]]],
         ["_data_tags", [], [[]]],
-        ["_civKilled", [], [[]]]
+        ["_civKilled", [], [[]]],
+        ["_graves", [], [[]]]
     ];
 
-    private _city = btc_city_all select _id;
+    private _city = btc_city_all get _id;
 
     _city setVariable ["initialized", _initialized];
     _city setVariable ["spawn_more", _spawn_more];
@@ -49,6 +50,7 @@ private _cities_status = +(profileNamespace getVariable [format ["btc_hm_%1_citi
     _city setVariable ["data_animals", _data_animals];
     _city setVariable ["data_tags", _data_tags];
     _city setVariable ["btc_rep_civKilled", _civKilled];
+    _city setVariable ["btc_rep_graves", _graves];
 
     if (btc_debug) then {
         private _marker = _city getVariable ["marker", ""];
@@ -59,8 +61,16 @@ private _cities_status = +(profileNamespace getVariable [format ["btc_hm_%1_citi
         };
     };
     if (btc_debug_log) then {
-        [format ["ID: %1 - IsOccupied %2", _id, _occupied], __FILE__, [false]] call btc_debug_fnc_message;
-        [format ["data_city: %1", _x], __FILE__, [false]] call btc_debug_fnc_message;
+        [format [
+            "ID: %1 - _initialized %2 _spawn_more %3 _occupied %4 count _data_units %5 _has_ho %6",
+            _id, _initialized, _spawn_more, 
+            _occupied, count _data_units, _has_ho  
+        ], __FILE__, [false]] call btc_debug_fnc_message;
+        [format [
+            "ID: %1 - _ho_units_spawned %2 count _ieds %3 _has_suicider %4 count _data_animals %5 count _data_tags %6 count _civKilled %7",
+            _id, _ho_units_spawned, count _ieds, _has_suicider,
+            count _data_animals, count _data_tags, count _civKilled  
+        ], __FILE__, [false]] call btc_debug_fnc_message;
     };
 } forEach _cities_status;
 
@@ -92,7 +102,7 @@ btc_cache_pos = _cache_pos;
 btc_cache_n = _cache_n;
 btc_cache_info = _cache_info;
 
-[_cache_pos, btc_p_chem, [1, 0] select _isChem] call btc_cache_fnc_create;
+[_cache_pos, btc_p_chem_cache_probability > 0, [1, 0] select _isChem] call btc_cache_fnc_create;
 btc_cache_obj setVariable ["btc_cache_unitsSpawned", _cache_unitsSpawned];
 
 btc_cache_markers = [];
@@ -156,18 +166,20 @@ private _vehs = +(profileNamespace getVariable [format ["btc_hm_%1_vehs", _name]
             ["_pylons", [], [[]]],
             ["_isContaminated", false, [false]],
             ["_supplyVehicle", [], [[]]],
+            ["_objectTexture", [], [[]]],
             ["_EDENinventory", [], [[]]],
             ["_vectorPos", [], [[]]],
             ["_ViV", [], [[]]],
             ["_flagTexture", "", [""]],
-            ["_turretMagazines", [], [[]]]
+            ["_turretMagazines", [], [[]]],
+            ["_tagTexture", "", [""]]
         ];
 
         if (btc_debug_log) then {
             [format ["_veh = %1", _x], __FILE__, [false]] call btc_debug_fnc_message;
         };
 
-        private _veh = [_veh_type, _veh_pos, _veh_dir, _customization, _isMedicalVehicle, _isRepairVehicle, _fuelSource, _pylons, _isContaminated, _supplyVehicle, _EDENinventory, _veh_AllHitPointsDamage, _flagTexture] call btc_log_fnc_createVehicle;
+        private _veh = [_veh_type, _veh_pos, _veh_dir, _customization, _isMedicalVehicle, _isRepairVehicle, _fuelSource, _pylons, _isContaminated, _supplyVehicle, _objectTexture, _EDENinventory, _veh_AllHitPointsDamage, _flagTexture, _tagTexture] call btc_log_fnc_createVehicle;
         _veh setVectorDirAndUp _vectorPos;
         _veh setFuel _veh_fuel;
 
@@ -217,40 +229,43 @@ private _id = ["ace_tagCreated", {
 //Player respawn tickets
 if (btc_p_respawn_ticketsAtStart >= 0) then {
     btc_respawn_tickets = +(profileNamespace getVariable [format ["btc_hm_%1_respawnTickets", _name], btc_respawn_tickets]);
-    if (btc_p_respawn_ticketsShare) then {
-        btc_p_respawn_ticketsAtStart = btc_respawn_tickets getOrDefault [str btc_player_side, btc_p_respawn_ticketsAtStart];
-    };
 
     private _deadBodyPlayers = +(profileNamespace getVariable [format ["btc_hm_%1_deadBodyPlayers", _name], []]);
-    private _group = createGroup btc_player_side;
-    btc_body_deadPlayers  = _deadBodyPlayers apply {
-        _x params ["_type", "_pos", "_dir", "_loadout", "_dogtag", "_isContaminated",
-            ["_flagTexture", "", [""]]
-        ];
-        private _body = _group createUnit [_type, ASLToAGL _pos, [], 0, "CAN_COLLIDE"];
-        _body setUnitLoadout _loadout;
-        [_body, _dogtag] call btc_body_fnc_dogtagSet;
+    btc_body_deadPlayers  = [_deadBodyPlayers] call btc_body_fnc_create;
+};
 
-        if (_isContaminated) then {
-            if ((btc_chem_contaminated pushBackUnique _body) > -1) then {
-                publicVariable "btc_chem_contaminated";
-            };
+//Player slots
+private _slots_serialized = +(profileNamespace getVariable [format ["btc_hm_%1_slotsSerialized", _name], createHashMap]);
+[{
+    {
+        if (_y isEqualTo []) then {continue};
+        private _objtClass = _y select 6;
+        if (_objtClass isEqualTo "") then {
+            _objtClass = objNull;
+        } else {
+            _objtClass = nearestObject [ASLToATL (_y select 0), _objtClass];
         };
-        _body setDamage 1;
-        _body setVariable ["btc_dont_delete", true];
-        _body forceFlagTexture _flagTexture;
+        _y set [6, _objtClass];
+    } forEach _this;
+}, _slots_serialized] call CBA_fnc_execNextFrame; // Need to wait for vehicle creation
+btc_slots_serialized = _slots_serialized;
 
-        [{
-            params ["_body", "_dir", "_pos"];
-            _body setDir _dir;
-            _body setPosASL _pos;
-        }, [_body, _dir, _pos], 3] call CBA_fnc_waitAndExecute;
-
-        _body call btc_body_fnc_createMarker;
-
-        _body
+//Explosives
+private _explosives = +(profileNamespace getVariable [format ["btc_hm_%1_explosives", _name], []]);
+btc_explosives = _explosives apply {
+    _x params ["_explosiveType", "_dir", "_pitch", "_pos", "_side"];
+    private _explosive = createVehicle [_explosiveType, _pos, [], 0, "CAN_COLLIDE"];
+    _explosive setPosATL _pos;
+    [_explosive, _dir, _pitch] call ACE_Explosives_fnc_setPosition;
+    _explosive setVariable ["btc_side", _side];
+    if (_side isEqualTo btc_player_side) then {
+        _explosive setShotParents [btc_explosives_objectSide, objNull];
     };
-    deleteGroup _group;
+    [
+        _explosive,
+        _dir,
+        _pitch
+    ];
 };
 
 //Player Markers
@@ -261,7 +276,7 @@ private _markers_properties = +(profileNamespace getVariable [format ["btc_hm_%1
         ["_markerChannel", 0, [0]]
     ];
 
-    private _marker = createMarker [format ["_USER_DEFINED #0/%1/%2", _forEachindex, _markerChannel], _markerPos, _markerChannel];
+    private _marker = createMarker [format ["_USER_DEFINED #0/%1/%2 btc_hm", _forEachindex, _markerChannel], _markerPos, _markerChannel];
     _marker setMarkerText _markerText;
     _marker setMarkerColor _markerColor;
     _marker setMarkerType _markerType;
@@ -269,6 +284,7 @@ private _markers_properties = +(profileNamespace getVariable [format ["btc_hm_%1
     _marker setMarkerAlpha _markerAlpha;
     _marker setMarkerBrush _markerBrush;
     _marker setMarkerDir _markerDir;
+
     _marker setMarkerShape _markerShape;
     if (_markerPolyline isNotEqualTo []) then {
         _marker setMarkerPolyline _markerPolyline;

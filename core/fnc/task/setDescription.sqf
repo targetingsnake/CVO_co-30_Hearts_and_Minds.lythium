@@ -363,7 +363,7 @@ switch (_description) do {
     };
     case 38 : {
         _description = [
-            format [localize "STR_BTC_HAM_SIDE_RUBBISH_DESC", _location] + (["UK3CB_KRG_B_MTLB_PKT"] call btc_fnc_typeOfPreview),
+            format [localize "STR_BTC_HAM_SIDE_RUBBISH_DESC", _location] + (["B_APC_Tracked_01_CRV_F"] call btc_fnc_typeOfPreview),
             format [localize "STR_BTC_HAM_SIDE_RUBBISH_TITLE", _location],
             format [localize "STR_BTC_HAM_SIDE_RUBBISH_TITLE", _location]
         ];
@@ -392,6 +392,24 @@ switch (_description) do {
             localize "STR_BTC_HAM_SIDE_PANDEMIC_DECON_TITLE"
         ];
         _type = "search";
+    };
+    case 42 : {
+        _location params ["_name", "_typeOf_church"];
+        _description = [
+            format [localize "STR_BTC_HAM_SIDE_MASSACRE_DESC", _name] + ([_typeOf_church] call btc_fnc_typeOfPreview),
+            format [localize "STR_BTC_HAM_SIDE_MASSACRE_TITLE", _name],
+            format [localize "STR_BTC_HAM_SIDE_MASSACRE_TITLE", _name]
+        ];
+        _type = "default";
+    };
+    case 43 : {
+        _location params ["_name", "_typeOf_civ"];
+        _description = [
+            (localize "STR_BTC_HAM_SIDE_MASSACRE_C_DESC") + ([_typeOf_civ] call btc_fnc_typeOfPreview),
+            format [localize "STR_BTC_HAM_SIDE_MASSACRE_C_TITLE", _name],
+            format [localize "STR_BTC_HAM_SIDE_MASSACRE_C_TITLE", _name]
+        ];
+        _type = "interact";
     };
 };
 

@@ -76,17 +76,17 @@ _medicalParameters params ["_advancedBandages", "_epi", "_surgicalKit", "_PAK", 
 
 //Item inside Uniform
 private _cfgPatches = configFile >> "CfgPatches";
-private _cargo_uniform = [ ["ACE_EarPlugs", 2], ["ACE_CableTie",5], ["ACE_MapTools", 1], ["tsp_paperclip",2], ["ACE_SpraypaintRed",1],["acex_intelitems_notepad",1],["Chemlight_yellow",2]];
+private _cargo_uniform = [["acc_flashlight", 1], ["ACE_EarPlugs", 1], ["ACE_CableTie",5], ["optic_ACO_grn_smg", 1], ["ACE_MapTools", 1], ["ACE_RangeTable_82mm", 1]];
 
 //Tweak uniform medical item depends on medical parameters
-private _medical = [["ACE_fieldDressing", 10], ["ACE_tourniquet", 3], ["ACE_morphine", 2], ["ACE_epinephrine", 2], ["ACE_splint", 1], ["ACE_bodyBag",1], ["ACE_packingBandage", 15]];
+private _medical = [["ACE_fieldDressing", 3], ["ACE_tourniquet", 4], ["ACE_morphine", 3]];
 _medical pushBack (if (_advancedBandages > 0) then {
     ["ACE_packingBandage", 4]
 } else {
     ["ACE_fieldDressing", 4]
 });
 _medical pushBack (if (_epi < 4) then {
-    ["ACE_epinephrine", 2]
+    ["ACE_epinephrine", 3]
 } else {
     ["ACE_morphine", 3]
 });
@@ -94,8 +94,6 @@ if (_fractures > 0) then {
     _medical pushBack ["ACE_splint", 1];
 };
 _cargo_uniform append _medical;
-
-
 
 private _uniform = switch (_type) do {
     case 6: {

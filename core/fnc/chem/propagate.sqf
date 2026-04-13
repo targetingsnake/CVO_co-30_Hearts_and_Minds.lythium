@@ -26,6 +26,8 @@ params [
     ["_vehicle", objNull, [objNull]]
 ];
 
+if (_item isEqualType "") exitWith {_this};
+
 if (_item in btc_chem_contaminated) then {
     if ((btc_chem_contaminated pushBackUnique _vehicle) > -1) then {
         publicVariable "btc_chem_contaminated";

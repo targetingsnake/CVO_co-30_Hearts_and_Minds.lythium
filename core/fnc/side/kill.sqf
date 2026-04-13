@@ -25,11 +25,9 @@ params [
 ];
 
 //// Choose an occupied City \\\\
-private _useful = btc_city_all select {
-    !isNull _x &&
+private _useful = values btc_city_all select {
     _x getVariable ["occupied", false] &&
-    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"]) &&
-    ([_x] call cvo_side_fnc_distanceCondition)
+    !((_x getVariable ["type", ""]) in ["NameLocal", "Hill", "NameMarine", "StrongpointArea"])
 };
 
 if (_useful isEqualTo []) exitWith {[] spawn btc_side_fnc_create;};
@@ -38,7 +36,7 @@ private _city = selectRandom _useful;
 
 //// Randomise position \\\\
 private _houses = ([getPos _city, 100] call btc_fnc_getHouses) select 0;
-_houses = _houses select {count (_x buildingPos -1) > 1}; // Building with low enterable positions are not interesting
+_houses = _houses select {count (_x buildingPos -1) > 3}; // Building with low enterable positions are not interesting
 if (_houses isEqualTo []) exitWith {[] spawn btc_side_fnc_create;};
 
 _houses = _houses apply {[count (_x buildingPos -1), _x]};
@@ -61,6 +59,12 @@ private _group_officer = createGroup btc_enemy_side;
 _group_officer setVariable ["no_cache", true];
 private _officerType = selectRandom btc_type_units;
 private _officer = _group_officer createUnit [_officerType, _pos, [], 0, "CAN_COLLIDE"];
+private _i = 0;
+while {insideBuilding _officer < 0.1 && _i < count _buildingPos} do {
+    _pos = _buildingPos select _i;
+    _officer setPosATL _pos;
+    _i = _i + 1;
+};
 
 //// Data side mission
 private _officerName = name _officer;
@@ -125,7 +129,7 @@ private _globalVariableName = format ["btc_%1", _dogTag_taskID];
      };
 }, [_officer_dogtagData, _dogTag_taskID, _taskID, _globalVariableName, _officer, _ehDeleted]] call CBA_fnc_addEventHandlerArgs;
 
-["ace_dogtags_addDogtagItem", {
+["ace_dogtags_broadcastDogtagInfo", {
     params ["_dogTag", "_dogTagData"];
     _thisArgs params ["_officer_dogTagData", "_dogTag_taskID", "_taskID", "_globalVariableName"];
 

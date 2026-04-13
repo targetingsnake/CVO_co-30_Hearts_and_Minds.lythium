@@ -47,7 +47,7 @@ if ([_active_city, grpNull, _area] call btc_patrol_fnc_playersInAreaCityGroup) e
 };
 
 //Find a city
-private _cities = btc_city_all inAreaArray [getPosWorld _active_city, _area, _area];
+private _cities = values btc_city_all inAreaArray [getPosWorld _active_city, _area, _area];
 private _usefuls = _cities select {!(_x getVariable ["active", false]) && _x getVariable ["occupied", false]};
 if (_usefuls isEqualTo []) exitWith {
     _group call CBA_fnc_deleteEntity;
@@ -62,7 +62,7 @@ if (_start_city getVariable ["hasbeach", false]) then {
 } else {
     _pos = getPos _start_city;
 };
-private _pos_isWater = surfaceIsWater _pos;
+private _pos_isWater = (surfaceIsWater _pos) && {getTerrainHeightASL _pos < -2};
 if (_pos_isWater) then {
     _pos = [_pos select 0, _pos select 1, 0];
     _random = 2;
